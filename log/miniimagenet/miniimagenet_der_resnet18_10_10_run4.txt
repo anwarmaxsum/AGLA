@@ -1,0 +1,2224 @@
+============================================================================================================
+Arguments =
+	approach: der
+	batch_size: 100
+	clipping: 10000
+	datasets: ['miniimagenet']
+	eval_on_train: False
+	exp_name: None
+	fix_bn: False
+	gpu: 3
+	gridsearch_tasks: -1
+	keep_existing_head: False
+	last_layer_analysis: False
+	log: ['disk']
+	lr: 0.05
+	lr_factor: 1.0
+	lr_min: 0.0001
+	lr_patience: 5
+	momentum: 0.9
+	multi_softmax: False
+	nc_first_task: 10
+	nepochs: 100
+	network: resnet18
+	no_cudnn_deterministic: False
+	num_tasks: 10
+	num_workers: 4
+	pin_memory: False
+	pretrained: False
+	results_path: ../miniimagenet_der_result10t
+	save_models: False
+	seed: 12
+	stop_at_task: 0
+	use_valid_only: False
+	warmup_lr_factor: 1.0
+	warmup_nepochs: 0
+	weight_decay: 0.0002
+============================================================================================================
+Approach arguments =
+============================================================================================================
+Exemplars dataset arguments =
+	exemplar_selection: random
+	num_exemplars: 0
+	num_exemplars_per_class: 50
+============================================================================================================
+WARNING: ../miniimagenet_der_result10t/miniimagenet_der already exists!
+AGLA Incremental Learning
+[(0, 10), (1, 10), (2, 10), (3, 10), (4, 10), (5, 10), (6, 10), (7, 10), (8, 10), (9, 10)]
+************************************************************************************************************
+Task  0
+************************************************************************************************************
+Input Size: 3072
+[Outer Loop] Train Base 
+| O-Epoch   1   1, time=  3.4s/  0.4s | lr=0.050 |Valid: loss=3.233 2.594 0.000 0.000, TAw acc= 24.0% |
+[Outer Loop] Train Base 
+| O-Epoch   2   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=22.865 2.242 0.000 0.000, TAw acc= 18.2% |
+[Outer Loop] Train Base 
+| O-Epoch   3   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=2.010 2.095 0.000 0.000, TAw acc= 31.8% |
+[Outer Loop] Train Base 
+| O-Epoch   4   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.896 1.938 0.000 0.000, TAw acc= 33.4% |
+[Outer Loop] Train Base 
+| O-Epoch   5   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=2.012 1.915 0.000 0.000, TAw acc= 32.4% |
+[Outer Loop] Train Base 
+| O-Epoch   6   1, time=  1.1s/  0.5s | lr=0.050 |Valid: loss=1.955 2.277 0.000 0.000, TAw acc= 33.6% |
+[Outer Loop] Train Base 
+| O-Epoch   7   1, time=  1.2s/  0.6s | lr=0.050 |Valid: loss=2.037 1.994 0.000 0.000, TAw acc= 35.4% |
+[Outer Loop] Train Base 
+| O-Epoch   8   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.819 2.041 0.000 0.000, TAw acc= 36.8% |
+[Outer Loop] Train Base 
+| O-Epoch   9   1, time=  1.1s/  0.4s | lr=0.050 |Valid: loss=2.156 1.998 0.000 0.000, TAw acc= 34.2% |
+[Outer Loop] Train Base 
+| O-Epoch  10   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.714 1.787 0.000 0.000, TAw acc= 40.6% |
+[Outer Loop] Train Base 
+| O-Epoch  11   1, time=  2.2s/  0.4s | lr=0.050 |Valid: loss=1.770 1.899 0.000 0.000, TAw acc= 42.2% |
+[Outer Loop] Train Base 
+| O-Epoch  12   1, time=  1.1s/  0.6s | lr=0.050 |Valid: loss=1.747 1.909 0.000 0.000, TAw acc= 40.8% |
+[Outer Loop] Train Base 
+| O-Epoch  13   1, time=  1.1s/  0.7s | lr=0.050 |Valid: loss=1.790 1.747 0.000 0.000, TAw acc= 40.4% |
+[Outer Loop] Train Base 
+| O-Epoch  14   1, time=  1.1s/  0.6s | lr=0.050 |Valid: loss=1.926 1.729 0.000 0.000, TAw acc= 41.0% |
+[Outer Loop] Train Base 
+| O-Epoch  15   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.685 1.622 0.000 0.000, TAw acc= 45.8% |
+[Outer Loop] Train Base 
+| O-Epoch  16   1, time=  1.3s/  0.5s | lr=0.050 |Valid: loss=1.680 1.791 0.000 0.000, TAw acc= 44.0% |
+[Outer Loop] Train Base 
+| O-Epoch  17   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.659 1.685 0.000 0.000, TAw acc= 43.0% |
+[Outer Loop] Train Base 
+| O-Epoch  18   1, time=  1.2s/  0.6s | lr=0.050 |Valid: loss=1.680 1.609 0.000 0.000, TAw acc= 42.4% |
+[Outer Loop] Train Base 
+| O-Epoch  19   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.675 1.748 0.000 0.000, TAw acc= 42.6% |
+[Outer Loop] Train Base 
+| O-Epoch  20   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.863 1.702 0.000 0.000, TAw acc= 44.2% |
+[Outer Loop] Train Base 
+| O-Epoch  21   1, time=  1.4s/  0.4s | lr=0.050 |Valid: loss=1.579 1.714 0.000 0.000, TAw acc= 44.4% |
+[Outer Loop] Train Base 
+| O-Epoch  22   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.700 1.720 0.000 0.000, TAw acc= 45.0% |
+[Outer Loop] Train Base 
+| O-Epoch  23   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.558 1.490 0.000 0.000, TAw acc= 45.2% |
+[Outer Loop] Train Base 
+| O-Epoch  24   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.575 1.523 0.000 0.000, TAw acc= 48.8% |
+[Outer Loop] Train Base 
+| O-Epoch  25   1, time=  1.3s/  0.6s | lr=0.050 |Valid: loss=1.645 1.589 0.000 0.000, TAw acc= 46.2% |
+[Outer Loop] Train Base 
+| O-Epoch  26   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.545 1.643 0.000 0.000, TAw acc= 48.2% |
+[Outer Loop] Train Base 
+| O-Epoch  27   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.528 1.717 0.000 0.000, TAw acc= 49.4% |
+[Outer Loop] Train Base 
+| O-Epoch  28   1, time=  1.2s/  0.6s | lr=0.050 |Valid: loss=1.606 1.585 0.000 0.000, TAw acc= 48.6% |
+[Outer Loop] Train Base 
+| O-Epoch  29   1, time=  1.3s/  0.5s | lr=0.050 |Valid: loss=1.527 1.490 0.000 0.000, TAw acc= 52.2% |
+[Outer Loop] Train Base 
+| O-Epoch  30   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=2.530 1.451 0.000 0.000, TAw acc= 39.8% |
+[Outer Loop] Train Base 
+| O-Epoch  31   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.458 1.455 0.000 0.000, TAw acc= 52.6% |
+[Outer Loop] Train Base 
+| O-Epoch  32   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.456 1.502 0.000 0.000, TAw acc= 52.0% |
+[Outer Loop] Train Base 
+| O-Epoch  33   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.594 1.549 0.000 0.000, TAw acc= 50.4% |
+[Outer Loop] Train Base 
+| O-Epoch  34   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.586 1.438 0.000 0.000, TAw acc= 48.0% |
+[Outer Loop] Train Base 
+| O-Epoch  35   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.551 1.495 0.000 0.000, TAw acc= 52.2% |
+[Outer Loop] Train Base 
+| O-Epoch  36   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.416 1.704 0.000 0.000, TAw acc= 53.8% |
+[Outer Loop] Train Base 
+| O-Epoch  37   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.439 1.311 0.000 0.000, TAw acc= 53.8% |
+[Outer Loop] Train Base 
+| O-Epoch  38   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.655 1.410 0.000 0.000, TAw acc= 51.6% |
+[Outer Loop] Train Base 
+| O-Epoch  39   1, time=  1.3s/  0.5s | lr=0.050 |Valid: loss=1.479 1.183 0.000 0.000, TAw acc= 53.6% |
+[Outer Loop] Train Base 
+| O-Epoch  40   1, time=  1.3s/  0.6s | lr=0.050 |Valid: loss=1.389 1.245 0.000 0.000, TAw acc= 56.6% |
+[Outer Loop] Train Base 
+| O-Epoch  41   1, time=  1.4s/  0.5s | lr=0.050 |Valid: loss=1.475 1.425 0.000 0.000, TAw acc= 53.6% |
+[Outer Loop] Train Base 
+| O-Epoch  42   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.379 1.170 0.000 0.000, TAw acc= 56.0% |
+[Outer Loop] Train Base 
+| O-Epoch  43   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.499 1.268 0.000 0.000, TAw acc= 52.4% |
+[Outer Loop] Train Base 
+| O-Epoch  44   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.352 1.387 0.000 0.000, TAw acc= 55.6% |
+[Outer Loop] Train Base 
+| O-Epoch  45   1, time=  1.1s/  0.6s | lr=0.050 |Valid: loss=1.415 1.059 0.000 0.000, TAw acc= 55.2% |
+[Outer Loop] Train Base 
+| O-Epoch  46   1, time=  1.2s/  0.7s | lr=0.050 |Valid: loss=1.383 1.318 0.000 0.000, TAw acc= 58.0% |
+[Outer Loop] Train Base 
+| O-Epoch  47   1, time=  1.1s/  0.5s | lr=0.050 |Valid: loss=1.493 1.179 0.000 0.000, TAw acc= 55.6% |
+[Outer Loop] Train Base 
+| O-Epoch  48   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.496 1.341 0.000 0.000, TAw acc= 52.6% |
+[Outer Loop] Train Base 
+| O-Epoch  49   1, time=  1.1s/  0.4s | lr=0.050 |Valid: loss=1.404 1.040 0.000 0.000, TAw acc= 56.6% |
+[Outer Loop] Train Base 
+| O-Epoch  50   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.363 1.057 0.000 0.000, TAw acc= 52.8% |
+[Outer Loop] Train Base 
+| O-Epoch  51   1, time=  1.5s/  0.5s | lr=0.050 |Valid: loss=1.357 1.180 0.000 0.000, TAw acc= 58.6% |
+[Outer Loop] Train Base 
+| O-Epoch  52   1, time=  1.4s/  0.4s | lr=0.050 |Valid: loss=1.379 1.353 0.000 0.000, TAw acc= 55.2% |
+[Outer Loop] Train Base 
+| O-Epoch  53   1, time=  1.2s/  0.6s | lr=0.050 |Valid: loss=1.459 1.089 0.000 0.000, TAw acc= 55.4% |
+[Outer Loop] Train Base 
+| O-Epoch  54   1, time=  1.2s/  0.6s | lr=0.050 |Valid: loss=1.492 1.055 0.000 0.000, TAw acc= 56.8% |
+[Outer Loop] Train Base 
+| O-Epoch  55   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.381 1.049 0.000 0.000, TAw acc= 56.0% |
+[Outer Loop] Train Base 
+| O-Epoch  56   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.385 1.106 0.000 0.000, TAw acc= 56.2% |
+[Outer Loop] Train Base 
+| O-Epoch  57   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.367 1.317 0.000 0.000, TAw acc= 57.0% |
+[Outer Loop] Train Base 
+| O-Epoch  58   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.379 1.198 0.000 0.000, TAw acc= 57.8% |
+[Outer Loop] Train Base 
+| O-Epoch  59   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.401 0.971 0.000 0.000, TAw acc= 55.4% |
+[Outer Loop] Train Base 
+| O-Epoch  60   1, time=  1.4s/  0.4s | lr=0.050 |Valid: loss=1.412 1.095 0.000 0.000, TAw acc= 57.0% |
+[Outer Loop] Train Base 
+| O-Epoch  61   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.479 1.078 0.000 0.000, TAw acc= 57.6% |
+[Outer Loop] Train Base 
+| O-Epoch  62   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.320 1.224 0.000 0.000, TAw acc= 59.0% |
+[Outer Loop] Train Base 
+| O-Epoch  63   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.463 1.126 0.000 0.000, TAw acc= 56.8% |
+[Outer Loop] Train Base 
+| O-Epoch  64   1, time=  1.2s/  0.6s | lr=0.050 |Valid: loss=1.314 1.185 0.000 0.000, TAw acc= 59.0% |
+[Outer Loop] Train Base 
+| O-Epoch  65   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.432 1.080 0.000 0.000, TAw acc= 57.2% |
+[Outer Loop] Train Base 
+| O-Epoch  66   1, time=  1.3s/  0.5s | lr=0.050 |Valid: loss=1.356 1.051 0.000 0.000, TAw acc= 59.2% |
+[Outer Loop] Train Base 
+| O-Epoch  67   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.423 1.087 0.000 0.000, TAw acc= 55.6% |
+[Outer Loop] Train Base 
+| O-Epoch  68   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.317 1.209 0.000 0.000, TAw acc= 60.2% |
+[Outer Loop] Train Base 
+| O-Epoch  69   1, time=  1.1s/  0.5s | lr=0.050 |Valid: loss=1.348 0.976 0.000 0.000, TAw acc= 58.2% |
+[Outer Loop] Train Base 
+| O-Epoch  70   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.303 0.965 0.000 0.000, TAw acc= 60.0% |
+[Outer Loop] Train Base 
+| O-Epoch  71   1, time=  1.2s/  0.6s | lr=0.050 |Valid: loss=1.451 0.982 0.000 0.000, TAw acc= 57.8% |
+[Outer Loop] Train Base 
+| O-Epoch  72   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.500 1.038 0.000 0.000, TAw acc= 58.4% |
+[Outer Loop] Train Base 
+| O-Epoch  73   1, time=  1.1s/  0.7s | lr=0.050 |Valid: loss=1.398 1.205 0.000 0.000, TAw acc= 59.0% |
+[Outer Loop] Train Base 
+| O-Epoch  74   1, time=  1.1s/  0.5s | lr=0.050 |Valid: loss=1.395 0.999 0.000 0.000, TAw acc= 57.6% |
+[Outer Loop] Train Base 
+| O-Epoch  75   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.426 1.006 0.000 0.000, TAw acc= 59.4% |
+[Outer Loop] Train Base 
+| O-Epoch  76   1, time=  1.4s/  0.4s | lr=0.050 |Valid: loss=1.323 0.788 0.000 0.000, TAw acc= 59.8% |
+[Outer Loop] Train Base 
+| O-Epoch  77   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.363 0.954 0.000 0.000, TAw acc= 61.2% |
+[Outer Loop] Train Base 
+| O-Epoch  78   1, time=  1.4s/  0.6s | lr=0.050 |Valid: loss=1.382 0.945 0.000 0.000, TAw acc= 60.4% |
+[Outer Loop] Train Base 
+| O-Epoch  79   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.382 0.996 0.000 0.000, TAw acc= 56.8% |
+[Outer Loop] Train Base 
+| O-Epoch  80   1, time=  1.4s/  0.6s | lr=0.050 |Valid: loss=1.360 1.057 0.000 0.000, TAw acc= 59.2% |
+[Outer Loop] Train Base 
+| O-Epoch  81   1, time=  1.6s/  0.4s | lr=0.050 |Valid: loss=1.292 0.989 0.000 0.000, TAw acc= 60.6% |
+[Outer Loop] Train Base 
+| O-Epoch  82   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.475 0.908 0.000 0.000, TAw acc= 55.8% |
+[Outer Loop] Train Base 
+| O-Epoch  83   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.297 0.888 0.000 0.000, TAw acc= 60.4% |
+[Outer Loop] Train Base 
+| O-Epoch  84   1, time=  1.2s/  0.6s | lr=0.050 |Valid: loss=1.367 1.083 0.000 0.000, TAw acc= 59.0% |
+[Outer Loop] Train Base 
+| O-Epoch  85   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.414 0.939 0.000 0.000, TAw acc= 58.2% |
+[Outer Loop] Train Base 
+| O-Epoch  86   1, time=  1.2s/  0.4s | lr=0.050 |Valid: loss=1.381 0.925 0.000 0.000, TAw acc= 60.8% |
+[Outer Loop] Train Base 
+| O-Epoch  87   1, time=  1.4s/  0.4s | lr=0.050 |Valid: loss=1.391 0.865 0.000 0.000, TAw acc= 59.2% |
+[Outer Loop] Train Base 
+| O-Epoch  88   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.437 1.394 0.000 0.000, TAw acc= 60.2% |
+[Outer Loop] Train Base 
+| O-Epoch  89   1, time=  1.3s/  0.5s | lr=0.050 |Valid: loss=1.373 0.828 0.000 0.000, TAw acc= 58.2% |
+[Outer Loop] Train Base 
+| O-Epoch  90   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.404 1.037 0.000 0.000, TAw acc= 60.8% |
+[Outer Loop] Train Base 
+| O-Epoch  91   1, time=  1.1s/  0.5s | lr=0.050 |Valid: loss=1.468 0.844 0.000 0.000, TAw acc= 59.6% |
+[Outer Loop] Train Base 
+| O-Epoch  92   1, time=  1.2s/  0.5s | lr=0.050 |Valid: loss=1.388 0.973 0.000 0.000, TAw acc= 61.6% |
+[Outer Loop] Train Base 
+| O-Epoch  93   1, time=  1.3s/  0.5s | lr=0.050 |Valid: loss=1.383 0.822 0.000 0.000, TAw acc= 61.0% |
+[Outer Loop] Train Base 
+| O-Epoch  94   1, time=  1.3s/  0.6s | lr=0.050 |Valid: loss=1.480 0.914 0.000 0.000, TAw acc= 59.0% |
+[Outer Loop] Train Base 
+| O-Epoch  95   1, time=  1.1s/  0.8s | lr=0.050 |Valid: loss=1.330 0.835 0.000 0.000, TAw acc= 61.8% |
+[Outer Loop] Train Base 
+| O-Epoch  96   1, time=  1.3s/  0.4s | lr=0.050 |Valid: loss=1.330 0.917 0.000 0.000, TAw acc= 61.8% |
+[Outer Loop] Train Base 
+| O-Epoch  97   1, time=  1.3s/  0.5s | lr=0.050 |Valid: loss=1.218 0.780 0.000 0.000, TAw acc= 63.4% |
+[Outer Loop] Train Base 
+| O-Epoch  98   1, time=  1.1s/  0.6s | lr=0.050 |Valid: loss=1.420 1.067 0.000 0.000, TAw acc= 60.2% |
+[Outer Loop] Train Base 
+| O-Epoch  99   1, time=  1.1s/  0.4s | lr=0.050 |Valid: loss=1.396 1.032 0.000 0.000, TAw acc= 62.8% |
+[Outer Loop] Train Base 
+| O-Epoch 100   1, time=  1.4s/  0.5s | lr=0.050 |Valid: loss=1.512 0.926 0.000 0.000, TAw acc= 59.6% |
+| Selected 500 train exemplars, time=  0.0s
+Post Train Process
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=1.632 | TAw acc= 58.3%, forg=  0.0%| TAg acc= 58.3%, forg=  0.0% <<<
+Save at ../miniimagenet_der_result10t/miniimagenet_der
+************************************************************************************************************
+Task  1
+************************************************************************************************************
+[Outer Loop] Train Base 
+| O-Epoch   1   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.256 428.332 1.762 426.570, TAw acc= 58.4% |
+[Outer Loop] Train Base 
+| O-Epoch   2   1, time=  1.9s/  0.5s | lr=0.050 |Valid: loss=1.144 443.304 1.468 441.836, TAw acc= 60.0% |
+[Outer Loop] Train Base 
+| O-Epoch   3   1, time=  2.2s/  0.5s | lr=0.050 |Valid: loss=1.095 427.230 1.347 425.883, TAw acc= 63.8% |
+[Outer Loop] Train Base 
+| O-Epoch   4   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.022 462.263 1.204 461.059, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch   5   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.104 452.828 1.555 451.273, TAw acc= 65.0% |
+[Outer Loop] Train Base 
+| O-Epoch   6   1, time=  2.8s/  0.4s | lr=0.050 |Valid: loss=1.038 508.376 1.263 507.114, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch   7   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.015 507.553 1.295 506.257, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch   8   1, time=  2.2s/  0.6s | lr=0.050 |Valid: loss=1.052 353.598 1.384 352.214, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch   9   1, time=  2.0s/  0.5s | lr=0.050 |Valid: loss=1.076 411.205 1.328 409.877, TAw acc= 63.2% |
+[Outer Loop] Train Base 
+| O-Epoch  10   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=0.906 409.755 1.368 408.386, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  11   1, time=  1.9s/  0.4s | lr=0.050 |Valid: loss=1.065 425.749 1.459 424.290, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch  12   1, time=  2.0s/  0.5s | lr=0.050 |Valid: loss=0.970 410.761 1.043 409.717, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  13   1, time=  2.0s/  0.5s | lr=0.050 |Valid: loss=0.930 412.822 1.018 411.804, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  14   1, time=  2.0s/  0.6s | lr=0.050 |Valid: loss=0.957 387.770 1.409 386.361, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  15   1, time=  1.9s/  0.5s | lr=0.050 |Valid: loss=0.908 425.349 1.327 424.021, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch  16   1, time=  2.1s/  0.7s | lr=0.050 |Valid: loss=1.020 432.801 1.100 431.701, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch  17   1, time=  2.2s/  0.4s | lr=0.050 |Valid: loss=0.987 437.733 1.200 436.532, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  18   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.011 452.353 1.110 451.243, TAw acc= 64.6% |
+[Outer Loop] Train Base 
+| O-Epoch  19   1, time=  1.9s/  0.4s | lr=0.050 |Valid: loss=0.952 420.889 1.069 419.820, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  20   1, time=  2.0s/  0.6s | lr=0.050 |Valid: loss=0.941 445.867 1.060 444.807, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  21   1, time=  2.1s/  0.5s | lr=0.050 |Valid: loss=0.913 464.535 1.130 463.405, TAw acc= 72.8% |
+[Outer Loop] Train Base 
+| O-Epoch  22   1, time=  2.2s/  0.6s | lr=0.050 |Valid: loss=1.004 469.240 0.937 468.303, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  23   1, time=  2.0s/  0.5s | lr=0.050 |Valid: loss=1.015 459.841 0.949 458.892, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch  24   1, time=  2.1s/  0.4s | lr=0.050 |Valid: loss=0.896 460.156 1.128 459.028, TAw acc= 71.0% |
+[Outer Loop] Train Base 
+| O-Epoch  25   1, time=  2.1s/  0.4s | lr=0.050 |Valid: loss=0.941 491.958 0.952 491.006, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  26   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=0.896 473.412 1.042 472.370, TAw acc= 71.4% |
+[Outer Loop] Train Base 
+| O-Epoch  27   1, time=  1.9s/  0.4s | lr=0.050 |Valid: loss=0.943 477.477 0.972 476.505, TAw acc= 70.6% |
+[Outer Loop] Train Base 
+| O-Epoch  28   1, time=  2.1s/  0.4s | lr=0.050 |Valid: loss=0.870 480.843 0.920 479.923, TAw acc= 74.2% |
+[Outer Loop] Train Base 
+| O-Epoch  29   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=0.991 473.791 1.007 472.783, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  30   1, time=  1.9s/  0.4s | lr=0.050 |Valid: loss=0.873 490.097 1.081 489.016, TAw acc= 73.0% |
+[Outer Loop] Train Base 
+| O-Epoch  31   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.028 470.133 1.142 468.991, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  32   1, time=  2.0s/  0.7s | lr=0.050 |Valid: loss=1.002 471.577 0.908 470.668, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  33   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.003 482.335 0.754 481.581, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch  34   1, time=  2.0s/  0.6s | lr=0.050 |Valid: loss=0.952 473.401 0.925 472.476, TAw acc= 72.6% |
+[Outer Loop] Train Base 
+| O-Epoch  35   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=0.974 477.787 1.070 476.717, TAw acc= 73.6% |
+[Outer Loop] Train Base 
+| O-Epoch  36   1, time=  2.0s/  0.5s | lr=0.050 |Valid: loss=1.028 473.987 0.685 473.302, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch  37   1, time=  1.9s/  0.4s | lr=0.050 |Valid: loss=0.889 470.738 1.054 469.684, TAw acc= 73.4% |
+[Outer Loop] Train Base 
+| O-Epoch  38   1, time=  1.9s/  0.4s | lr=0.050 |Valid: loss=0.927 445.557 0.910 444.647, TAw acc= 71.6% |
+[Outer Loop] Train Base 
+| O-Epoch  39   1, time=  1.9s/  0.4s | lr=0.050 |Valid: loss=0.862 464.467 0.798 463.669, TAw acc= 73.6% |
+[Outer Loop] Train Base 
+| O-Epoch  40   1, time=  2.1s/  0.5s | lr=0.050 |Valid: loss=0.928 480.643 0.855 479.788, TAw acc= 73.4% |
+[Outer Loop] Train Base 
+| O-Epoch  41   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.033 462.339 0.913 461.427, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  42   1, time=  1.9s/  0.4s | lr=0.050 |Valid: loss=1.068 473.991 0.926 473.065, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  43   1, time=  2.1s/  0.4s | lr=0.050 |Valid: loss=0.963 475.062 0.906 474.156, TAw acc= 70.4% |
+[Outer Loop] Train Base 
+| O-Epoch  44   1, time=  2.2s/  0.4s | lr=0.050 |Valid: loss=0.961 451.983 0.846 451.137, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch  45   1, time=  2.3s/  0.4s | lr=0.050 |Valid: loss=0.922 452.873 0.772 452.101, TAw acc= 70.6% |
+[Outer Loop] Train Base 
+| O-Epoch  46   1, time=  2.0s/  0.5s | lr=0.050 |Valid: loss=1.032 466.347 0.956 465.392, TAw acc= 71.8% |
+[Outer Loop] Train Base 
+| O-Epoch  47   1, time=  2.1s/  0.4s | lr=0.050 |Valid: loss=0.961 469.887 1.005 468.883, TAw acc= 72.4% |
+[Outer Loop] Train Base 
+| O-Epoch  48   1, time=  2.1s/  0.4s | lr=0.050 |Valid: loss=0.932 469.689 0.910 468.778, TAw acc= 73.8% |
+[Outer Loop] Train Base 
+| O-Epoch  49   1, time=  2.1s/  0.4s | lr=0.050 |Valid: loss=1.026 462.929 0.918 462.011, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  50   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.128 450.811 0.922 449.888, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  51   1, time=  2.0s/  0.7s | lr=0.050 |Valid: loss=0.873 458.689 0.955 457.735, TAw acc= 74.8% |
+[Outer Loop] Train Base 
+| O-Epoch  52   1, time=  1.8s/  0.4s | lr=0.050 |Valid: loss=1.218 451.504 1.006 450.498, TAw acc= 63.8% |
+[Outer Loop] Train Base 
+| O-Epoch  53   1, time=  1.9s/  0.4s | lr=0.050 |Valid: loss=1.017 463.212 0.805 462.407, TAw acc= 73.8% |
+[Outer Loop] Train Base 
+| O-Epoch  54   1, time=  1.9s/  0.5s | lr=0.050 |Valid: loss=0.982 446.195 0.596 445.600, TAw acc= 71.4% |
+[Outer Loop] Train Base 
+| O-Epoch  55   1, time=  2.1s/  0.4s | lr=0.050 |Valid: loss=1.028 443.191 0.598 442.592, TAw acc= 71.0% |
+[Outer Loop] Train Base 
+| O-Epoch  56   1, time=  2.0s/  0.6s | lr=0.050 |Valid: loss=0.925 446.465 1.081 445.384, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch  57   1, time=  2.1s/  0.6s | lr=0.050 |Valid: loss=1.072 430.816 0.790 430.026, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  58   1, time=  2.0s/  0.6s | lr=0.050 |Valid: loss=1.076 433.976 0.728 433.248, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  59   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.022 453.792 0.650 453.142, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  60   1, time=  2.0s/  0.5s | lr=0.050 |Valid: loss=0.999 441.040 0.793 440.246, TAw acc= 73.6% |
+[Outer Loop] Train Base 
+| O-Epoch  61   1, time=  2.2s/  0.5s | lr=0.050 |Valid: loss=1.064 446.038 0.798 445.239, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch  62   1, time=  2.3s/  0.4s | lr=0.050 |Valid: loss=0.975 427.313 0.856 426.457, TAw acc= 71.8% |
+[Outer Loop] Train Base 
+| O-Epoch  63   1, time=  2.1s/  0.6s | lr=0.050 |Valid: loss=1.074 442.679 0.632 442.046, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  64   1, time=  2.2s/  0.5s | lr=0.050 |Valid: loss=1.124 431.062 0.793 430.268, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  65   1, time=  2.0s/  0.5s | lr=0.050 |Valid: loss=1.031 432.881 0.564 432.316, TAw acc= 70.6% |
+[Outer Loop] Train Base 
+| O-Epoch  66   1, time=  1.9s/  0.4s | lr=0.050 |Valid: loss=0.981 438.757 0.794 437.963, TAw acc= 72.4% |
+[Outer Loop] Train Base 
+| O-Epoch  67   1, time=  2.3s/  0.5s | lr=0.050 |Valid: loss=0.979 416.002 0.719 415.283, TAw acc= 72.6% |
+[Outer Loop] Train Base 
+| O-Epoch  68   1, time=  2.0s/  0.5s | lr=0.050 |Valid: loss=0.959 430.946 0.805 430.141, TAw acc= 70.6% |
+[Outer Loop] Train Base 
+| O-Epoch  69   1, time=  1.9s/  0.5s | lr=0.050 |Valid: loss=1.049 434.442 0.822 433.620, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch  70   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.018 425.071 0.910 424.161, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  71   1, time=  2.1s/  0.4s | lr=0.050 |Valid: loss=1.037 420.045 0.738 419.307, TAw acc= 70.4% |
+[Outer Loop] Train Base 
+| O-Epoch  72   1, time=  2.0s/  0.5s | lr=0.050 |Valid: loss=0.874 422.068 0.757 421.311, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  73   1, time=  1.9s/  0.5s | lr=0.050 |Valid: loss=0.985 427.091 0.875 426.216, TAw acc= 71.4% |
+[Outer Loop] Train Base 
+| O-Epoch  74   1, time=  1.9s/  0.5s | lr=0.050 |Valid: loss=0.987 420.014 0.662 419.352, TAw acc= 72.0% |
+[Outer Loop] Train Base 
+| O-Epoch  75   1, time=  1.9s/  0.6s | lr=0.050 |Valid: loss=1.067 416.487 0.779 415.708, TAw acc= 71.4% |
+[Outer Loop] Train Base 
+| O-Epoch  76   1, time=  2.2s/  0.5s | lr=0.050 |Valid: loss=0.932 406.993 0.772 406.221, TAw acc= 75.6% |
+[Outer Loop] Train Base 
+| O-Epoch  77   1, time=  2.0s/  0.6s | lr=0.050 |Valid: loss=1.025 419.559 0.724 418.835, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  78   1, time=  2.1s/  0.5s | lr=0.050 |Valid: loss=0.936 404.672 0.843 403.829, TAw acc= 71.6% |
+[Outer Loop] Train Base 
+| O-Epoch  79   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=0.908 414.025 0.618 413.408, TAw acc= 75.0% |
+[Outer Loop] Train Base 
+| O-Epoch  80   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.127 410.111 0.754 409.356, TAw acc= 70.4% |
+[Outer Loop] Train Base 
+| O-Epoch  81   1, time=  1.9s/  0.5s | lr=0.050 |Valid: loss=1.056 403.720 0.992 402.727, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  82   1, time=  1.9s/  0.5s | lr=0.050 |Valid: loss=0.980 417.565 0.735 416.830, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  83   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=0.959 420.224 0.898 419.326, TAw acc= 72.6% |
+[Outer Loop] Train Base 
+| O-Epoch  84   1, time=  1.9s/  0.5s | lr=0.050 |Valid: loss=0.981 403.031 0.605 402.426, TAw acc= 70.6% |
+[Outer Loop] Train Base 
+| O-Epoch  85   1, time=  2.1s/  0.5s | lr=0.050 |Valid: loss=1.099 406.802 0.885 405.916, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  86   1, time=  1.9s/  0.4s | lr=0.050 |Valid: loss=1.057 406.157 0.686 405.471, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch  87   1, time=  1.9s/  0.5s | lr=0.050 |Valid: loss=0.948 408.614 0.694 407.920, TAw acc= 73.0% |
+[Outer Loop] Train Base 
+| O-Epoch  88   1, time=  1.9s/  0.5s | lr=0.050 |Valid: loss=1.003 411.437 0.769 410.668, TAw acc= 73.4% |
+[Outer Loop] Train Base 
+| O-Epoch  89   1, time=  1.9s/  0.4s | lr=0.050 |Valid: loss=0.898 406.141 0.594 405.547, TAw acc= 74.2% |
+[Outer Loop] Train Base 
+| O-Epoch  90   1, time=  2.0s/  0.5s | lr=0.050 |Valid: loss=0.929 408.180 0.615 407.565, TAw acc= 74.2% |
+[Outer Loop] Train Base 
+| O-Epoch  91   1, time=  2.2s/  0.4s | lr=0.050 |Valid: loss=0.908 399.785 0.592 399.193, TAw acc= 73.0% |
+[Outer Loop] Train Base 
+| O-Epoch  92   1, time=  2.1s/  0.4s | lr=0.050 |Valid: loss=1.017 405.728 0.768 404.959, TAw acc= 72.6% |
+[Outer Loop] Train Base 
+| O-Epoch  93   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.007 395.245 0.556 394.689, TAw acc= 71.8% |
+[Outer Loop] Train Base 
+| O-Epoch  94   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.074 397.068 0.812 396.256, TAw acc= 71.4% |
+[Outer Loop] Train Base 
+| O-Epoch  95   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=1.050 392.717 0.787 391.930, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch  96   1, time=  1.9s/  0.5s | lr=0.050 |Valid: loss=0.973 394.502 0.768 393.734, TAw acc= 73.0% |
+[Outer Loop] Train Base 
+| O-Epoch  97   1, time=  1.9s/  1.3s | lr=0.050 |Valid: loss=1.067 403.967 0.742 403.226, TAw acc= 71.2% |
+[Outer Loop] Train Base 
+| O-Epoch  98   1, time=  2.1s/  0.4s | lr=0.050 |Valid: loss=0.972 398.303 0.552 397.751, TAw acc= 72.4% |
+[Outer Loop] Train Base 
+| O-Epoch  99   1, time=  2.0s/  0.4s | lr=0.050 |Valid: loss=0.899 400.028 0.674 399.354, TAw acc= 72.8% |
+[Outer Loop] Train Base 
+| O-Epoch 100   1, time=  2.1s/  0.4s | lr=0.050 |Valid: loss=1.040 399.143 0.902 398.241, TAw acc= 73.2% |
+| Selected 1000 train exemplars, time=  0.0s
+Post Train Process
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=1.984 | TAw acc= 54.1%, forg=  4.2%| TAg acc= 21.6%, forg= 36.7% <<<
+>>> Test on task  1 : loss=1.131 | TAw acc= 70.0%, forg=  0.0%| TAg acc= 68.4%, forg=  0.0% <<<
+Save at ../miniimagenet_der_result10t/miniimagenet_der
+************************************************************************************************************
+Task  2
+************************************************************************************************************
+[Outer Loop] Train Base 
+| O-Epoch   1   1, time=  2.9s/  0.5s | lr=0.050 |Valid: loss=1.458 535.544 2.118 533.425, TAw acc= 48.4% |
+[Outer Loop] Train Base 
+| O-Epoch   2   1, time=  2.4s/  0.6s | lr=0.050 |Valid: loss=1.444 579.011 1.806 577.205, TAw acc= 53.8% |
+[Outer Loop] Train Base 
+| O-Epoch   3   1, time=  2.4s/  0.6s | lr=0.050 |Valid: loss=1.369 586.220 1.509 584.711, TAw acc= 54.6% |
+[Outer Loop] Train Base 
+| O-Epoch   4   1, time=  2.5s/  0.5s | lr=0.050 |Valid: loss=1.369 602.523 1.493 601.031, TAw acc= 53.2% |
+[Outer Loop] Train Base 
+| O-Epoch   5   1, time=  2.3s/  0.4s | lr=0.050 |Valid: loss=1.312 615.244 1.821 613.423, TAw acc= 56.6% |
+[Outer Loop] Train Base 
+| O-Epoch   6   1, time=  2.3s/  0.4s | lr=0.050 |Valid: loss=1.349 626.902 1.515 625.386, TAw acc= 53.4% |
+[Outer Loop] Train Base 
+| O-Epoch   7   1, time=  2.3s/  0.4s | lr=0.050 |Valid: loss=1.273 635.445 1.330 634.115, TAw acc= 55.8% |
+[Outer Loop] Train Base 
+| O-Epoch   8   1, time=  2.3s/  0.4s | lr=0.050 |Valid: loss=1.418 655.471 1.309 654.162, TAw acc= 52.0% |
+[Outer Loop] Train Base 
+| O-Epoch   9   1, time=  2.2s/  0.5s | lr=0.050 |Valid: loss=1.474 672.882 1.466 671.416, TAw acc= 51.2% |
+[Outer Loop] Train Base 
+| O-Epoch  10   1, time=  2.2s/  0.4s | lr=0.050 |Valid: loss=1.367 676.756 1.546 675.210, TAw acc= 54.2% |
+[Outer Loop] Train Base 
+| O-Epoch  11   1, time=  2.7s/  0.4s | lr=0.050 |Valid: loss=1.429 669.575 1.500 668.074, TAw acc= 55.2% |
+[Outer Loop] Train Base 
+| O-Epoch  12   1, time=  2.7s/  0.4s | lr=0.050 |Valid: loss=1.405 677.980 1.490 676.490, TAw acc= 54.2% |
+[Outer Loop] Train Base 
+| O-Epoch  13   1, time=  2.7s/  0.4s | lr=0.050 |Valid: loss=1.332 680.404 1.441 678.963, TAw acc= 56.6% |
+[Outer Loop] Train Base 
+| O-Epoch  14   1, time=  2.8s/  0.4s | lr=0.050 |Valid: loss=1.434 674.959 1.461 673.498, TAw acc= 54.0% |
+[Outer Loop] Train Base 
+| O-Epoch  15   1, time=  2.7s/  0.5s | lr=0.050 |Valid: loss=1.329 667.487 1.190 666.297, TAw acc= 56.4% |
+[Outer Loop] Train Base 
+| O-Epoch  16   1, time=  2.5s/  0.4s | lr=0.050 |Valid: loss=1.439 654.714 1.394 653.321, TAw acc= 53.2% |
+[Outer Loop] Train Base 
+| O-Epoch  17   1, time=  2.5s/  0.5s | lr=0.050 |Valid: loss=1.372 653.192 1.345 651.847, TAw acc= 59.6% |
+[Outer Loop] Train Base 
+| O-Epoch  18   1, time=  2.5s/  0.5s | lr=0.050 |Valid: loss=1.414 644.716 1.169 643.547, TAw acc= 56.6% |
+[Outer Loop] Train Base 
+| O-Epoch  19   1, time=  2.8s/  0.4s | lr=0.050 |Valid: loss=1.435 663.681 1.158 662.523, TAw acc= 53.6% |
+[Outer Loop] Train Base 
+| O-Epoch  20   1, time=  2.3s/  0.4s | lr=0.050 |Valid: loss=1.403 658.341 1.344 656.997, TAw acc= 58.0% |
+[Outer Loop] Train Base 
+| O-Epoch  21   1, time=  2.4s/  0.4s | lr=0.050 |Valid: loss=1.376 659.574 1.118 658.455, TAw acc= 56.0% |
+[Outer Loop] Train Base 
+| O-Epoch  22   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.489 655.317 1.105 654.212, TAw acc= 53.2% |
+[Outer Loop] Train Base 
+| O-Epoch  23   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.457 654.170 1.089 653.081, TAw acc= 55.0% |
+[Outer Loop] Train Base 
+| O-Epoch  24   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.433 659.031 1.352 657.679, TAw acc= 59.8% |
+[Outer Loop] Train Base 
+| O-Epoch  25   1, time=  2.5s/  0.6s | lr=0.050 |Valid: loss=1.485 649.964 1.266 648.698, TAw acc= 53.8% |
+[Outer Loop] Train Base 
+| O-Epoch  26   1, time=  2.6s/  0.4s | lr=0.050 |Valid: loss=1.389 654.904 1.428 653.475, TAw acc= 56.2% |
+[Outer Loop] Train Base 
+| O-Epoch  27   1, time=  2.7s/  0.5s | lr=0.050 |Valid: loss=1.390 647.172 0.825 646.347, TAw acc= 59.0% |
+[Outer Loop] Train Base 
+| O-Epoch  28   1, time=  2.7s/  0.4s | lr=0.050 |Valid: loss=1.323 623.821 1.228 622.594, TAw acc= 57.6% |
+[Outer Loop] Train Base 
+| O-Epoch  29   1, time=  2.6s/  0.4s | lr=0.050 |Valid: loss=1.451 648.000 1.150 646.851, TAw acc= 55.4% |
+[Outer Loop] Train Base 
+| O-Epoch  30   1, time=  2.4s/  0.4s | lr=0.050 |Valid: loss=1.446 648.005 1.211 646.794, TAw acc= 57.4% |
+[Outer Loop] Train Base 
+| O-Epoch  31   1, time=  2.5s/  0.4s | lr=0.050 |Valid: loss=1.410 639.407 0.950 638.458, TAw acc= 57.8% |
+[Outer Loop] Train Base 
+| O-Epoch  32   1, time=  3.2s/  0.4s | lr=0.050 |Valid: loss=1.578 646.044 1.036 645.008, TAw acc= 55.4% |
+[Outer Loop] Train Base 
+| O-Epoch  33   1, time=  2.6s/  0.6s | lr=0.050 |Valid: loss=1.499 645.001 0.966 644.035, TAw acc= 54.4% |
+[Outer Loop] Train Base 
+| O-Epoch  34   1, time=  2.4s/  0.4s | lr=0.050 |Valid: loss=1.528 618.249 1.413 616.836, TAw acc= 54.8% |
+[Outer Loop] Train Base 
+| O-Epoch  35   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.464 621.482 1.280 620.202, TAw acc= 55.6% |
+[Outer Loop] Train Base 
+| O-Epoch  36   1, time=  2.4s/  0.4s | lr=0.050 |Valid: loss=1.426 639.864 1.248 638.616, TAw acc= 56.4% |
+[Outer Loop] Train Base 
+| O-Epoch  37   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.514 646.934 1.451 645.483, TAw acc= 57.6% |
+[Outer Loop] Train Base 
+| O-Epoch  38   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.531 641.535 1.151 640.384, TAw acc= 54.4% |
+[Outer Loop] Train Base 
+| O-Epoch  39   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.459 632.479 0.765 631.713, TAw acc= 52.6% |
+[Outer Loop] Train Base 
+| O-Epoch  40   1, time=  3.3s/  0.5s | lr=0.050 |Valid: loss=1.492 628.542 1.028 627.514, TAw acc= 56.6% |
+[Outer Loop] Train Base 
+| O-Epoch  41   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.474 628.062 0.987 627.075, TAw acc= 58.4% |
+[Outer Loop] Train Base 
+| O-Epoch  42   1, time=  2.3s/  0.4s | lr=0.050 |Valid: loss=1.477 630.977 0.851 630.126, TAw acc= 56.2% |
+[Outer Loop] Train Base 
+| O-Epoch  43   1, time=  2.3s/  0.5s | lr=0.050 |Valid: loss=1.611 641.136 1.142 639.994, TAw acc= 54.6% |
+[Outer Loop] Train Base 
+| O-Epoch  44   1, time=  2.4s/  0.4s | lr=0.050 |Valid: loss=1.525 628.034 0.963 627.071, TAw acc= 57.8% |
+[Outer Loop] Train Base 
+| O-Epoch  45   1, time=  2.5s/  0.6s | lr=0.050 |Valid: loss=1.538 628.280 0.777 627.503, TAw acc= 57.2% |
+[Outer Loop] Train Base 
+| O-Epoch  46   1, time=  2.6s/  0.6s | lr=0.050 |Valid: loss=1.442 630.321 1.066 629.255, TAw acc= 54.8% |
+[Outer Loop] Train Base 
+| O-Epoch  47   1, time=  2.6s/  0.7s | lr=0.050 |Valid: loss=1.576 628.291 0.938 627.354, TAw acc= 56.8% |
+[Outer Loop] Train Base 
+| O-Epoch  48   1, time=  2.6s/  0.5s | lr=0.050 |Valid: loss=1.532 623.337 1.272 622.065, TAw acc= 57.0% |
+[Outer Loop] Train Base 
+| O-Epoch  49   1, time=  2.7s/  0.6s | lr=0.050 |Valid: loss=1.532 636.648 1.026 635.622, TAw acc= 54.2% |
+[Outer Loop] Train Base 
+| O-Epoch  50   1, time=  2.7s/  0.5s | lr=0.050 |Valid: loss=1.603 625.446 0.869 624.577, TAw acc= 55.4% |
+[Outer Loop] Train Base 
+| O-Epoch  51   1, time=  2.7s/  0.4s | lr=0.050 |Valid: loss=1.526 626.694 1.193 625.501, TAw acc= 57.6% |
+[Outer Loop] Train Base 
+| O-Epoch  52   1, time=  2.6s/  0.5s | lr=0.050 |Valid: loss=1.509 628.311 0.819 627.492, TAw acc= 56.6% |
+[Outer Loop] Train Base 
+| O-Epoch  53   1, time=  2.7s/  0.5s | lr=0.050 |Valid: loss=1.593 604.543 0.907 603.636, TAw acc= 54.8% |
+[Outer Loop] Train Base 
+| O-Epoch  54   1, time=  2.7s/  0.7s | lr=0.050 |Valid: loss=1.463 624.364 1.006 623.358, TAw acc= 56.4% |
+[Outer Loop] Train Base 
+| O-Epoch  55   1, time=  2.6s/  0.6s | lr=0.050 |Valid: loss=1.523 610.831 0.972 609.859, TAw acc= 57.8% |
+[Outer Loop] Train Base 
+| O-Epoch  56   1, time=  2.6s/  0.4s | lr=0.050 |Valid: loss=1.647 633.336 0.974 632.362, TAw acc= 55.6% |
+[Outer Loop] Train Base 
+| O-Epoch  57   1, time=  2.7s/  0.5s | lr=0.050 |Valid: loss=1.735 627.633 0.790 626.842, TAw acc= 56.4% |
+[Outer Loop] Train Base 
+| O-Epoch  58   1, time=  2.9s/  0.4s | lr=0.050 |Valid: loss=1.501 622.260 1.145 621.115, TAw acc= 56.0% |
+[Outer Loop] Train Base 
+| O-Epoch  59   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.679 623.583 0.758 622.825, TAw acc= 54.4% |
+[Outer Loop] Train Base 
+| O-Epoch  60   1, time=  2.5s/  0.5s | lr=0.050 |Valid: loss=1.656 624.352 0.867 623.485, TAw acc= 56.8% |
+[Outer Loop] Train Base 
+| O-Epoch  61   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.665 615.526 0.913 614.613, TAw acc= 56.0% |
+[Outer Loop] Train Base 
+| O-Epoch  62   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.598 621.351 0.869 620.482, TAw acc= 57.8% |
+[Outer Loop] Train Base 
+| O-Epoch  63   1, time=  2.4s/  0.4s | lr=0.050 |Valid: loss=1.660 626.279 0.961 625.318, TAw acc= 58.4% |
+[Outer Loop] Train Base 
+| O-Epoch  64   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.575 603.857 0.754 603.103, TAw acc= 58.8% |
+[Outer Loop] Train Base 
+| O-Epoch  65   1, time=  2.4s/  0.4s | lr=0.050 |Valid: loss=1.649 610.284 1.019 609.265, TAw acc= 55.8% |
+[Outer Loop] Train Base 
+| O-Epoch  66   1, time=  2.5s/  0.5s | lr=0.050 |Valid: loss=1.675 608.110 1.049 607.062, TAw acc= 53.0% |
+[Outer Loop] Train Base 
+| O-Epoch  67   1, time=  2.4s/  0.4s | lr=0.050 |Valid: loss=1.611 608.118 0.832 607.286, TAw acc= 57.2% |
+[Outer Loop] Train Base 
+| O-Epoch  68   1, time=  2.5s/  0.5s | lr=0.050 |Valid: loss=1.635 598.346 0.890 597.456, TAw acc= 54.4% |
+[Outer Loop] Train Base 
+| O-Epoch  69   1, time=  2.4s/  0.8s | lr=0.050 |Valid: loss=1.732 598.830 1.054 597.776, TAw acc= 54.4% |
+[Outer Loop] Train Base 
+| O-Epoch  70   1, time=  2.6s/  0.5s | lr=0.050 |Valid: loss=1.659 598.783 0.774 598.010, TAw acc= 57.2% |
+[Outer Loop] Train Base 
+| O-Epoch  71   1, time=  2.6s/  0.5s | lr=0.050 |Valid: loss=1.617 611.891 0.823 611.068, TAw acc= 60.0% |
+[Outer Loop] Train Base 
+| O-Epoch  72   1, time=  2.7s/  0.5s | lr=0.050 |Valid: loss=1.618 604.786 0.683 604.102, TAw acc= 58.0% |
+[Outer Loop] Train Base 
+| O-Epoch  73   1, time=  2.6s/  0.4s | lr=0.050 |Valid: loss=1.619 614.727 0.815 613.912, TAw acc= 57.6% |
+[Outer Loop] Train Base 
+| O-Epoch  74   1, time=  2.8s/  0.4s | lr=0.050 |Valid: loss=1.712 614.283 0.742 613.541, TAw acc= 55.8% |
+[Outer Loop] Train Base 
+| O-Epoch  75   1, time=  2.7s/  0.4s | lr=0.050 |Valid: loss=1.639 604.154 0.835 603.320, TAw acc= 57.6% |
+[Outer Loop] Train Base 
+| O-Epoch  76   1, time=  2.7s/  0.4s | lr=0.050 |Valid: loss=1.645 602.693 0.945 601.749, TAw acc= 57.0% |
+[Outer Loop] Train Base 
+| O-Epoch  77   1, time=  2.6s/  0.4s | lr=0.050 |Valid: loss=1.583 602.486 0.935 601.552, TAw acc= 58.6% |
+[Outer Loop] Train Base 
+| O-Epoch  78   1, time=  2.6s/  0.4s | lr=0.050 |Valid: loss=1.781 599.872 0.759 599.113, TAw acc= 55.6% |
+[Outer Loop] Train Base 
+| O-Epoch  79   1, time=  2.5s/  0.5s | lr=0.050 |Valid: loss=1.714 597.663 0.772 596.891, TAw acc= 55.2% |
+[Outer Loop] Train Base 
+| O-Epoch  80   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.647 596.566 0.783 595.783, TAw acc= 55.8% |
+[Outer Loop] Train Base 
+| O-Epoch  81   1, time=  2.7s/  0.5s | lr=0.050 |Valid: loss=1.580 600.632 0.893 599.739, TAw acc= 57.2% |
+[Outer Loop] Train Base 
+| O-Epoch  82   1, time=  2.7s/  0.5s | lr=0.050 |Valid: loss=1.536 598.044 0.726 597.318, TAw acc= 59.8% |
+[Outer Loop] Train Base 
+| O-Epoch  83   1, time=  2.3s/  0.5s | lr=0.050 |Valid: loss=1.610 590.947 0.748 590.199, TAw acc= 54.6% |
+[Outer Loop] Train Base 
+| O-Epoch  84   1, time=  2.3s/  0.4s | lr=0.050 |Valid: loss=1.596 609.743 0.793 608.950, TAw acc= 58.4% |
+[Outer Loop] Train Base 
+| O-Epoch  85   1, time=  2.6s/  0.5s | lr=0.050 |Valid: loss=1.651 605.972 0.764 605.208, TAw acc= 56.2% |
+[Outer Loop] Train Base 
+| O-Epoch  86   1, time=  2.5s/  0.7s | lr=0.050 |Valid: loss=1.636 604.246 0.950 603.295, TAw acc= 56.8% |
+[Outer Loop] Train Base 
+| O-Epoch  87   1, time=  2.5s/  0.5s | lr=0.050 |Valid: loss=1.628 603.157 0.769 602.388, TAw acc= 57.0% |
+[Outer Loop] Train Base 
+| O-Epoch  88   1, time=  2.8s/  0.4s | lr=0.050 |Valid: loss=1.670 615.544 0.920 614.623, TAw acc= 57.6% |
+[Outer Loop] Train Base 
+| O-Epoch  89   1, time=  2.8s/  0.5s | lr=0.050 |Valid: loss=1.725 606.003 1.194 604.809, TAw acc= 55.2% |
+[Outer Loop] Train Base 
+| O-Epoch  90   1, time=  2.8s/  0.5s | lr=0.050 |Valid: loss=1.640 608.674 0.772 607.902, TAw acc= 56.6% |
+[Outer Loop] Train Base 
+| O-Epoch  91   1, time=  2.6s/  0.4s | lr=0.050 |Valid: loss=1.738 608.416 0.904 607.512, TAw acc= 56.2% |
+[Outer Loop] Train Base 
+| O-Epoch  92   1, time=  2.6s/  0.6s | lr=0.050 |Valid: loss=1.755 604.235 0.865 603.371, TAw acc= 53.6% |
+[Outer Loop] Train Base 
+| O-Epoch  93   1, time=  2.6s/  0.4s | lr=0.050 |Valid: loss=1.640 610.135 0.872 609.263, TAw acc= 57.6% |
+[Outer Loop] Train Base 
+| O-Epoch  94   1, time=  2.5s/  0.5s | lr=0.050 |Valid: loss=1.718 604.718 0.784 603.933, TAw acc= 56.6% |
+[Outer Loop] Train Base 
+| O-Epoch  95   1, time=  2.4s/  0.4s | lr=0.050 |Valid: loss=1.628 609.351 0.850 608.501, TAw acc= 58.4% |
+[Outer Loop] Train Base 
+| O-Epoch  96   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.701 600.932 0.679 600.254, TAw acc= 54.6% |
+[Outer Loop] Train Base 
+| O-Epoch  97   1, time=  2.6s/  0.5s | lr=0.050 |Valid: loss=1.586 598.273 0.794 597.479, TAw acc= 57.6% |
+[Outer Loop] Train Base 
+| O-Epoch  98   1, time=  2.4s/  0.4s | lr=0.050 |Valid: loss=1.804 597.215 0.725 596.490, TAw acc= 56.4% |
+[Outer Loop] Train Base 
+| O-Epoch  99   1, time=  2.3s/  0.4s | lr=0.050 |Valid: loss=1.831 599.341 0.955 598.385, TAw acc= 56.6% |
+[Outer Loop] Train Base 
+| O-Epoch 100   1, time=  2.4s/  0.5s | lr=0.050 |Valid: loss=1.689 607.421 0.850 606.571, TAw acc= 55.4% |
+| Selected 1500 train exemplars, time=  0.0s
+Post Train Process
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=1.992 | TAw acc= 51.3%, forg=  7.0%| TAg acc= 18.6%, forg= 39.7% <<<
+>>> Test on task  1 : loss=1.680 | TAw acc= 58.5%, forg= 11.5%| TAg acc= 22.7%, forg= 45.7% <<<
+>>> Test on task  2 : loss=1.738 | TAw acc= 57.2%, forg=  0.0%| TAg acc= 54.4%, forg=  0.0% <<<
+Save at ../miniimagenet_der_result10t/miniimagenet_der
+************************************************************************************************************
+Task  3
+************************************************************************************************************
+[Outer Loop] Train Base 
+| O-Epoch   1   1, time=  3.1s/  0.6s | lr=0.050 |Valid: loss=1.158 738.698 1.489 737.209, TAw acc= 59.8% |
+[Outer Loop] Train Base 
+| O-Epoch   2   1, time=  3.1s/  0.5s | lr=0.050 |Valid: loss=1.090 772.674 1.486 771.188, TAw acc= 63.8% |
+[Outer Loop] Train Base 
+| O-Epoch   3   1, time=  3.0s/  0.4s | lr=0.050 |Valid: loss=1.090 831.427 1.501 829.926, TAw acc= 60.4% |
+[Outer Loop] Train Base 
+| O-Epoch   4   1, time=  3.1s/  0.4s | lr=0.050 |Valid: loss=1.029 831.264 1.297 829.967, TAw acc= 64.0% |
+[Outer Loop] Train Base 
+| O-Epoch   5   1, time=  3.1s/  0.5s | lr=0.050 |Valid: loss=1.041 858.361 1.261 857.100, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch   6   1, time=  3.1s/  0.4s | lr=0.050 |Valid: loss=0.971 845.218 1.440 843.778, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch   7   1, time=  2.8s/  0.7s | lr=0.050 |Valid: loss=0.989 863.238 1.287 861.950, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch   8   1, time=  2.9s/  1.4s | lr=0.050 |Valid: loss=1.080 851.986 1.108 850.878, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch   9   1, time=  2.9s/  0.4s | lr=0.050 |Valid: loss=1.033 842.952 1.166 841.785, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  10   1, time=  2.9s/  0.5s | lr=0.050 |Valid: loss=1.040 856.861 1.179 855.682, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  11   1, time=  2.8s/  0.4s | lr=0.050 |Valid: loss=1.111 844.224 0.983 843.241, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch  12   1, time=  2.9s/  0.4s | lr=0.050 |Valid: loss=1.081 833.238 1.098 832.140, TAw acc= 64.0% |
+[Outer Loop] Train Base 
+| O-Epoch  13   1, time=  3.2s/  0.4s | lr=0.050 |Valid: loss=1.056 856.075 1.141 854.934, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  14   1, time=  2.5s/  0.4s | lr=0.050 |Valid: loss=1.136 833.102 1.157 831.945, TAw acc= 64.4% |
+[Outer Loop] Train Base 
+| O-Epoch  15   1, time=  3.4s/  0.6s | lr=0.050 |Valid: loss=1.134 854.857 0.889 853.968, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch  16   1, time=  3.4s/  0.5s | lr=0.050 |Valid: loss=1.141 837.321 1.147 836.174, TAw acc= 63.8% |
+[Outer Loop] Train Base 
+| O-Epoch  17   1, time=  3.3s/  0.5s | lr=0.050 |Valid: loss=0.999 847.774 1.071 846.703, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  18   1, time=  3.2s/  0.5s | lr=0.050 |Valid: loss=1.028 838.207 0.946 837.261, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  19   1, time=  3.1s/  0.5s | lr=0.050 |Valid: loss=1.118 845.086 0.777 844.309, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  20   1, time=  3.0s/  0.4s | lr=0.050 |Valid: loss=1.143 845.182 0.965 844.217, TAw acc= 64.8% |
+[Outer Loop] Train Base 
+| O-Epoch  21   1, time=  3.1s/  0.5s | lr=0.050 |Valid: loss=1.158 835.690 1.117 834.572, TAw acc= 64.6% |
+[Outer Loop] Train Base 
+| O-Epoch  22   1, time=  2.9s/  0.4s | lr=0.050 |Valid: loss=1.161 834.172 1.031 833.141, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch  23   1, time=  3.1s/  0.5s | lr=0.050 |Valid: loss=1.106 831.214 0.884 830.330, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  24   1, time=  2.8s/  0.5s | lr=0.050 |Valid: loss=1.155 834.165 1.144 833.021, TAw acc= 63.8% |
+[Outer Loop] Train Base 
+| O-Epoch  25   1, time=  3.1s/  0.5s | lr=0.050 |Valid: loss=1.128 837.705 0.996 836.709, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  26   1, time=  3.1s/  0.5s | lr=0.050 |Valid: loss=1.132 840.029 1.062 838.967, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  27   1, time=  3.2s/  0.6s | lr=0.050 |Valid: loss=1.262 838.628 0.996 837.633, TAw acc= 62.6% |
+[Outer Loop] Train Base 
+| O-Epoch  28   1, time=  4.0s/  0.5s | lr=0.050 |Valid: loss=1.094 835.042 0.929 834.113, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  29   1, time=  3.0s/  0.4s | lr=0.050 |Valid: loss=1.154 839.381 0.717 838.664, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  30   1, time=  3.1s/  0.5s | lr=0.050 |Valid: loss=1.098 842.598 0.705 841.893, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  31   1, time=  3.3s/  0.4s | lr=0.050 |Valid: loss=1.088 830.817 0.731 830.086, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  32   1, time=  3.5s/  0.5s | lr=0.050 |Valid: loss=1.166 804.276 0.775 803.501, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch  33   1, time=  3.6s/  0.4s | lr=0.050 |Valid: loss=1.075 822.126 0.882 821.244, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  34   1, time=  3.6s/  0.6s | lr=0.050 |Valid: loss=1.175 818.488 0.704 817.784, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  35   1, time=  3.4s/  0.4s | lr=0.050 |Valid: loss=1.150 824.963 0.812 824.152, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  36   1, time=  3.1s/  1.2s | lr=0.050 |Valid: loss=1.234 822.091 0.825 821.267, TAw acc= 64.8% |
+[Outer Loop] Train Base 
+| O-Epoch  37   1, time=  3.5s/  0.4s | lr=0.050 |Valid: loss=1.162 824.210 0.920 823.289, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch  38   1, time=  3.6s/  0.5s | lr=0.050 |Valid: loss=1.140 817.331 0.768 816.563, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch  39   1, time=  3.5s/  0.5s | lr=0.050 |Valid: loss=1.128 828.018 0.930 827.088, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  40   1, time=  3.3s/  0.4s | lr=0.050 |Valid: loss=1.202 839.893 0.754 839.138, TAw acc= 62.8% |
+[Outer Loop] Train Base 
+| O-Epoch  41   1, time=  2.9s/  0.5s | lr=0.050 |Valid: loss=1.189 822.842 0.902 821.940, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  42   1, time=  3.0s/  0.6s | lr=0.050 |Valid: loss=1.135 822.401 1.000 821.401, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  43   1, time=  2.9s/  0.4s | lr=0.050 |Valid: loss=1.241 813.352 0.837 812.515, TAw acc= 64.8% |
+[Outer Loop] Train Base 
+| O-Epoch  44   1, time=  3.0s/  0.5s | lr=0.050 |Valid: loss=1.247 826.920 0.763 826.157, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  45   1, time=  2.9s/  0.5s | lr=0.050 |Valid: loss=1.204 829.048 0.974 828.074, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  46   1, time=  3.0s/  0.4s | lr=0.050 |Valid: loss=1.231 824.359 0.740 823.619, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  47   1, time=  3.2s/  0.5s | lr=0.050 |Valid: loss=1.233 834.182 0.726 833.455, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  48   1, time=  3.1s/  0.4s | lr=0.050 |Valid: loss=1.334 818.997 0.724 818.273, TAw acc= 64.8% |
+[Outer Loop] Train Base 
+| O-Epoch  49   1, time=  3.5s/  0.4s | lr=0.050 |Valid: loss=1.251 822.866 0.765 822.102, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  50   1, time=  3.5s/  0.5s | lr=0.050 |Valid: loss=1.373 820.301 0.889 819.411, TAw acc= 62.8% |
+[Outer Loop] Train Base 
+| O-Epoch  51   1, time=  3.8s/  0.4s | lr=0.050 |Valid: loss=1.235 827.858 0.739 827.118, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  52   1, time=  3.6s/  0.4s | lr=0.050 |Valid: loss=1.241 822.719 0.638 822.081, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  53   1, time=  3.4s/  0.5s | lr=0.050 |Valid: loss=1.317 822.303 0.720 821.583, TAw acc= 64.6% |
+[Outer Loop] Train Base 
+| O-Epoch  54   1, time=  3.4s/  0.5s | lr=0.050 |Valid: loss=1.200 830.219 0.845 829.374, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  55   1, time=  3.9s/  0.5s | lr=0.050 |Valid: loss=1.265 828.179 0.957 827.222, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  56   1, time=  3.2s/  0.5s | lr=0.050 |Valid: loss=1.225 819.141 0.819 818.321, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  57   1, time=  3.2s/  0.4s | lr=0.050 |Valid: loss=1.196 822.350 0.755 821.595, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  58   1, time=  3.0s/  0.4s | lr=0.050 |Valid: loss=1.316 814.917 0.912 814.005, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  59   1, time=  3.1s/  0.5s | lr=0.050 |Valid: loss=1.224 823.380 0.748 822.632, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  60   1, time=  2.9s/  0.5s | lr=0.050 |Valid: loss=1.317 818.706 0.650 818.056, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch  61   1, time=  2.8s/  0.5s | lr=0.050 |Valid: loss=1.197 815.066 0.643 814.423, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  62   1, time=  3.1s/  0.5s | lr=0.050 |Valid: loss=1.262 813.193 0.543 812.650, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  63   1, time=  3.0s/  0.4s | lr=0.050 |Valid: loss=1.225 817.121 0.614 816.508, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch  64   1, time=  3.6s/  0.4s | lr=0.050 |Valid: loss=1.305 815.585 0.600 814.985, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  65   1, time=  3.1s/  0.4s | lr=0.050 |Valid: loss=1.283 818.340 0.850 817.490, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch  66   1, time=  3.1s/  0.5s | lr=0.050 |Valid: loss=1.415 809.284 0.934 808.350, TAw acc= 65.0% |
+[Outer Loop] Train Base 
+| O-Epoch  67   1, time=  3.2s/  0.5s | lr=0.050 |Valid: loss=1.260 801.762 0.835 800.927, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  68   1, time=  3.4s/  0.5s | lr=0.050 |Valid: loss=1.313 801.169 0.913 800.256, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch  69   1, time=  3.5s/  0.4s | lr=0.050 |Valid: loss=1.292 808.257 0.683 807.574, TAw acc= 65.0% |
+[Outer Loop] Train Base 
+| O-Epoch  70   1, time=  3.6s/  0.5s | lr=0.050 |Valid: loss=1.183 797.986 0.495 797.491, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  71   1, time=  3.6s/  0.4s | lr=0.050 |Valid: loss=1.203 812.234 0.870 811.364, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  72   1, time=  3.6s/  0.5s | lr=0.050 |Valid: loss=1.312 800.527 0.774 799.754, TAw acc= 64.0% |
+[Outer Loop] Train Base 
+| O-Epoch  73   1, time=  3.5s/  0.7s | lr=0.050 |Valid: loss=1.243 806.520 0.704 805.816, TAw acc= 64.2% |
+[Outer Loop] Train Base 
+| O-Epoch  74   1, time=  3.5s/  0.5s | lr=0.050 |Valid: loss=1.280 808.839 0.653 808.186, TAw acc= 64.6% |
+[Outer Loop] Train Base 
+| O-Epoch  75   1, time=  3.5s/  0.4s | lr=0.050 |Valid: loss=1.309 805.028 0.749 804.280, TAw acc= 63.8% |
+[Outer Loop] Train Base 
+| O-Epoch  76   1, time=  4.3s/  0.5s | lr=0.050 |Valid: loss=1.268 803.521 0.836 802.685, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  77   1, time=  3.2s/  0.4s | lr=0.050 |Valid: loss=1.248 805.859 0.772 805.087, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  78   1, time=  3.0s/  1.4s | lr=0.050 |Valid: loss=1.251 797.833 0.910 796.923, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  79   1, time=  3.5s/  0.5s | lr=0.050 |Valid: loss=1.214 803.939 0.613 803.326, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  80   1, time=  3.4s/  0.4s | lr=0.050 |Valid: loss=1.372 802.611 0.655 801.955, TAw acc= 65.0% |
+[Outer Loop] Train Base 
+| O-Epoch  81   1, time=  3.6s/  0.4s | lr=0.050 |Valid: loss=1.260 798.943 0.834 798.109, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch  82   1, time=  3.2s/  0.4s | lr=0.050 |Valid: loss=1.262 806.299 0.851 805.448, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  83   1, time=  2.9s/  0.6s | lr=0.050 |Valid: loss=1.252 801.575 0.733 800.843, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  84   1, time=  3.0s/  0.4s | lr=0.050 |Valid: loss=1.286 806.426 0.839 805.587, TAw acc= 64.6% |
+[Outer Loop] Train Base 
+| O-Epoch  85   1, time=  3.2s/  0.4s | lr=0.050 |Valid: loss=1.314 800.288 0.591 799.697, TAw acc= 64.0% |
+[Outer Loop] Train Base 
+| O-Epoch  86   1, time=  3.0s/  0.5s | lr=0.050 |Valid: loss=1.211 804.371 0.770 803.600, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch  87   1, time=  3.0s/  0.4s | lr=0.050 |Valid: loss=1.375 802.640 0.630 802.010, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  88   1, time=  3.2s/  0.5s | lr=0.050 |Valid: loss=1.265 796.068 0.553 795.516, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  89   1, time=  3.4s/  0.4s | lr=0.050 |Valid: loss=1.378 806.813 0.590 806.222, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  90   1, time=  3.3s/  0.5s | lr=0.050 |Valid: loss=1.239 800.987 0.622 800.365, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch  91   1, time=  3.4s/  0.4s | lr=0.050 |Valid: loss=1.191 801.963 0.692 801.271, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  92   1, time=  3.6s/  0.4s | lr=0.050 |Valid: loss=1.316 801.372 0.835 800.537, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch  93   1, time=  3.5s/  0.4s | lr=0.050 |Valid: loss=1.268 803.338 0.421 802.917, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  94   1, time=  3.5s/  0.5s | lr=0.050 |Valid: loss=1.318 806.952 0.845 806.107, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  95   1, time=  3.4s/  0.6s | lr=0.050 |Valid: loss=1.282 798.905 0.640 798.265, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  96   1, time=  3.1s/  0.4s | lr=0.050 |Valid: loss=1.348 792.169 0.651 791.518, TAw acc= 65.0% |
+[Outer Loop] Train Base 
+| O-Epoch  97   1, time=  2.9s/  0.4s | lr=0.050 |Valid: loss=1.265 775.860 0.616 775.244, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  98   1, time=  3.0s/  0.4s | lr=0.050 |Valid: loss=1.346 792.287 0.841 791.446, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  99   1, time=  3.0s/  0.4s | lr=0.050 |Valid: loss=1.275 792.531 0.515 792.017, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch 100   1, time=  3.0s/  0.5s | lr=0.050 |Valid: loss=1.251 790.812 0.524 790.287, TAw acc= 65.8% |
+| Selected 2000 train exemplars, time=  0.1s
+Post Train Process
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=2.036 | TAw acc= 49.8%, forg=  8.5%| TAg acc= 18.1%, forg= 40.2% <<<
+>>> Test on task  1 : loss=1.642 | TAw acc= 56.9%, forg= 13.1%| TAg acc= 22.7%, forg= 45.7% <<<
+>>> Test on task  2 : loss=2.233 | TAw acc= 45.0%, forg= 12.2%| TAg acc= 13.6%, forg= 40.8% <<<
+>>> Test on task  3 : loss=1.300 | TAw acc= 64.9%, forg=  0.0%| TAg acc= 60.8%, forg=  0.0% <<<
+Save at ../miniimagenet_der_result10t/miniimagenet_der
+************************************************************************************************************
+Task  4
+************************************************************************************************************
+[Outer Loop] Train Base 
+| O-Epoch   1   1, time=  4.1s/  0.4s | lr=0.050 |Valid: loss=1.049 853.246 1.300 851.946, TAw acc= 64.2% |
+[Outer Loop] Train Base 
+| O-Epoch   2   1, time=  3.8s/  0.4s | lr=0.050 |Valid: loss=1.008 898.771 1.200 897.571, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch   3   1, time=  4.1s/  0.5s | lr=0.050 |Valid: loss=0.971 965.838 1.292 964.547, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch   4   1, time=  4.0s/  0.9s | lr=0.050 |Valid: loss=0.955 995.123 1.187 993.936, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch   5   1, time=  4.2s/  0.4s | lr=0.050 |Valid: loss=0.982 1014.758 1.362 1013.396, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch   6   1, time=  4.2s/  0.4s | lr=0.050 |Valid: loss=1.047 993.073 1.548 991.525, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch   7   1, time=  4.0s/  0.4s | lr=0.050 |Valid: loss=1.021 1013.967 1.029 1012.938, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch   8   1, time=  3.9s/  0.5s | lr=0.050 |Valid: loss=1.005 1011.970 1.089 1010.881, TAw acc= 71.2% |
+[Outer Loop] Train Base 
+| O-Epoch   9   1, time=  4.2s/  0.5s | lr=0.050 |Valid: loss=1.050 976.447 1.226 975.221, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  10   1, time=  3.8s/  0.5s | lr=0.050 |Valid: loss=1.023 1011.173 1.033 1010.140, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  11   1, time=  4.0s/  0.6s | lr=0.050 |Valid: loss=1.112 1006.838 1.109 1005.729, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  12   1, time=  4.3s/  0.5s | lr=0.050 |Valid: loss=1.074 1017.357 0.914 1016.443, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  13   1, time=  4.4s/  0.4s | lr=0.050 |Valid: loss=1.121 1018.966 1.010 1017.955, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  14   1, time=  4.2s/  0.5s | lr=0.050 |Valid: loss=1.027 1016.370 0.998 1015.372, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch  15   1, time=  3.9s/  0.6s | lr=0.050 |Valid: loss=1.057 995.845 1.188 994.657, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  16   1, time=  3.6s/  0.5s | lr=0.050 |Valid: loss=1.025 1006.259 0.904 1005.354, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  17   1, time=  2.8s/  0.4s | lr=0.050 |Valid: loss=1.063 1000.616 0.764 999.852, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  18   1, time=  4.3s/  0.4s | lr=0.050 |Valid: loss=0.963 984.165 0.960 983.205, TAw acc= 71.6% |
+[Outer Loop] Train Base 
+| O-Epoch  19   1, time=  4.5s/  0.5s | lr=0.050 |Valid: loss=1.040 991.582 0.784 990.798, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  20   1, time=  4.5s/  0.4s | lr=0.050 |Valid: loss=1.049 1011.918 0.838 1011.080, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  21   1, time=  4.7s/  0.5s | lr=0.050 |Valid: loss=1.188 991.199 0.840 990.359, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch  22   1, time=  4.7s/  0.4s | lr=0.050 |Valid: loss=1.030 1002.851 0.914 1001.936, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  23   1, time=  4.5s/  0.5s | lr=0.050 |Valid: loss=1.127 979.492 0.948 978.545, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  24   1, time=  4.2s/  0.6s | lr=0.050 |Valid: loss=1.060 976.423 0.694 975.729, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch  25   1, time=  4.0s/  0.6s | lr=0.050 |Valid: loss=1.109 999.278 1.010 998.267, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  26   1, time=  3.8s/  0.4s | lr=0.050 |Valid: loss=1.161 977.405 0.964 976.441, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  27   1, time=  3.9s/  0.4s | lr=0.050 |Valid: loss=1.086 989.744 0.703 989.041, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  28   1, time=  3.8s/  0.5s | lr=0.050 |Valid: loss=1.175 964.806 0.995 963.811, TAw acc= 70.6% |
+[Outer Loop] Train Base 
+| O-Epoch  29   1, time=  4.0s/  0.4s | lr=0.050 |Valid: loss=1.191 994.525 1.033 993.491, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  30   1, time=  4.0s/  0.4s | lr=0.050 |Valid: loss=1.106 988.855 0.796 988.059, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  31   1, time=  3.9s/  0.5s | lr=0.050 |Valid: loss=1.152 978.807 0.721 978.085, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  32   1, time=  4.2s/  0.4s | lr=0.050 |Valid: loss=1.164 991.453 1.108 990.345, TAw acc= 71.0% |
+[Outer Loop] Train Base 
+| O-Epoch  33   1, time=  4.3s/  0.4s | lr=0.050 |Valid: loss=1.118 979.636 0.704 978.932, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch  34   1, time=  4.3s/  0.5s | lr=0.050 |Valid: loss=1.228 992.266 0.824 991.442, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  35   1, time=  4.5s/  0.5s | lr=0.050 |Valid: loss=1.182 974.022 0.921 973.101, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  36   1, time=  4.6s/  0.4s | lr=0.050 |Valid: loss=1.125 983.071 0.893 982.178, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  37   1, time=  4.6s/  0.4s | lr=0.050 |Valid: loss=1.110 984.099 0.859 983.239, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  38   1, time=  4.7s/  1.2s | lr=0.050 |Valid: loss=1.146 982.400 0.730 981.670, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch  39   1, time=  4.4s/  0.4s | lr=0.050 |Valid: loss=1.134 980.989 0.627 980.362, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  40   1, time=  4.5s/  0.4s | lr=0.050 |Valid: loss=1.105 994.458 0.877 993.581, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  41   1, time=  4.7s/  0.4s | lr=0.050 |Valid: loss=1.242 970.150 0.809 969.341, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch  42   1, time=  4.6s/  0.5s | lr=0.050 |Valid: loss=1.131 971.788 0.960 970.828, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  43   1, time=  4.5s/  0.4s | lr=0.050 |Valid: loss=1.120 973.992 1.207 972.785, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  44   1, time=  4.4s/  0.4s | lr=0.050 |Valid: loss=1.152 976.024 0.597 975.427, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch  45   1, time=  4.2s/  0.4s | lr=0.050 |Valid: loss=1.240 985.501 0.851 984.650, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  46   1, time=  4.0s/  0.5s | lr=0.050 |Valid: loss=1.223 980.788 0.802 979.985, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  47   1, time=  3.9s/  0.5s | lr=0.050 |Valid: loss=1.262 975.847 1.008 974.839, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  48   1, time=  3.6s/  0.4s | lr=0.050 |Valid: loss=1.277 965.655 0.800 964.854, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  49   1, time=  4.2s/  0.5s | lr=0.050 |Valid: loss=1.336 971.950 0.761 971.189, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch  50   1, time=  3.9s/  0.5s | lr=0.050 |Valid: loss=1.244 975.025 0.732 974.293, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  51   1, time=  4.1s/  0.5s | lr=0.050 |Valid: loss=1.250 986.363 0.767 985.596, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  52   1, time=  3.8s/  0.4s | lr=0.050 |Valid: loss=1.336 973.600 0.734 972.866, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  53   1, time=  3.9s/  0.4s | lr=0.050 |Valid: loss=1.212 963.293 0.659 962.635, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  54   1, time=  4.3s/  0.5s | lr=0.050 |Valid: loss=1.169 952.654 0.776 951.878, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  55   1, time=  5.2s/  0.4s | lr=0.050 |Valid: loss=1.283 965.852 0.543 965.309, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  56   1, time=  4.6s/  0.4s | lr=0.050 |Valid: loss=1.310 963.921 0.638 963.283, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  57   1, time=  4.5s/  0.4s | lr=0.050 |Valid: loss=1.300 957.250 0.801 956.449, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  58   1, time=  4.4s/  0.4s | lr=0.050 |Valid: loss=1.195 972.496 0.644 971.851, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  59   1, time=  4.2s/  0.4s | lr=0.050 |Valid: loss=1.249 965.851 0.567 965.284, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  60   1, time=  3.9s/  0.4s | lr=0.050 |Valid: loss=1.185 973.696 0.680 973.015, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  61   1, time=  4.2s/  0.5s | lr=0.050 |Valid: loss=1.266 969.450 0.872 968.578, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch  62   1, time=  4.0s/  0.5s | lr=0.050 |Valid: loss=1.271 962.086 0.683 961.403, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  63   1, time=  3.8s/  0.4s | lr=0.050 |Valid: loss=1.191 956.009 0.720 955.288, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  64   1, time=  4.1s/  0.5s | lr=0.050 |Valid: loss=1.362 940.952 0.666 940.287, TAw acc= 64.0% |
+[Outer Loop] Train Base 
+| O-Epoch  65   1, time=  3.9s/  0.5s | lr=0.050 |Valid: loss=1.404 972.279 0.701 971.578, TAw acc= 64.6% |
+[Outer Loop] Train Base 
+| O-Epoch  66   1, time=  4.0s/  0.5s | lr=0.050 |Valid: loss=1.265 969.238 0.652 968.586, TAw acc= 70.6% |
+[Outer Loop] Train Base 
+| O-Epoch  67   1, time=  4.0s/  0.5s | lr=0.050 |Valid: loss=1.209 965.740 0.506 965.234, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  68   1, time=  4.2s/  0.5s | lr=0.050 |Valid: loss=1.319 975.263 0.855 974.408, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch  69   1, time=  4.4s/  0.5s | lr=0.050 |Valid: loss=1.250 979.601 0.682 978.919, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch  70   1, time=  4.5s/  0.4s | lr=0.050 |Valid: loss=1.253 961.965 0.770 961.195, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  71   1, time=  4.7s/  0.4s | lr=0.050 |Valid: loss=1.338 958.064 0.715 957.350, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  72   1, time=  4.4s/  0.5s | lr=0.050 |Valid: loss=1.392 949.211 0.699 948.511, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  73   1, time=  4.2s/  0.5s | lr=0.050 |Valid: loss=1.260 958.885 0.461 958.424, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  74   1, time=  4.2s/  0.5s | lr=0.050 |Valid: loss=1.264 962.420 0.949 961.471, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  75   1, time=  4.2s/  0.4s | lr=0.050 |Valid: loss=1.242 948.178 0.634 947.544, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  76   1, time=  4.0s/  0.5s | lr=0.050 |Valid: loss=1.281 942.926 0.540 942.386, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  77   1, time=  4.0s/  0.4s | lr=0.050 |Valid: loss=1.169 947.480 0.653 946.828, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  78   1, time=  3.8s/  0.5s | lr=0.050 |Valid: loss=1.350 942.104 0.604 941.499, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  79   1, time=  3.8s/  0.4s | lr=0.050 |Valid: loss=1.364 960.632 0.825 959.808, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch  80   1, time=  3.9s/  0.5s | lr=0.050 |Valid: loss=1.276 956.024 0.690 955.334, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  81   1, time=  4.2s/  0.5s | lr=0.050 |Valid: loss=1.389 943.468 0.708 942.760, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  82   1, time=  4.5s/  0.4s | lr=0.050 |Valid: loss=1.255 945.054 0.773 944.281, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  83   1, time=  4.7s/  0.4s | lr=0.050 |Valid: loss=1.183 938.743 0.686 938.057, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  84   1, time=  4.8s/  0.4s | lr=0.050 |Valid: loss=1.255 948.100 0.653 947.447, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  85   1, time=  4.6s/  0.4s | lr=0.050 |Valid: loss=1.276 945.816 0.609 945.207, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  86   1, time=  4.3s/  0.4s | lr=0.050 |Valid: loss=1.210 940.741 0.632 940.109, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  87   1, time=  4.1s/  0.4s | lr=0.050 |Valid: loss=1.247 949.997 0.672 949.326, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  88   1, time=  4.0s/  0.5s | lr=0.050 |Valid: loss=1.256 955.245 0.545 954.700, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch  89   1, time=  4.1s/  0.4s | lr=0.050 |Valid: loss=1.296 953.308 0.567 952.741, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch  90   1, time=  4.0s/  0.4s | lr=0.050 |Valid: loss=1.231 956.677 0.773 955.904, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  91   1, time=  4.2s/  0.5s | lr=0.050 |Valid: loss=1.240 946.036 0.570 945.466, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  92   1, time=  4.1s/  0.5s | lr=0.050 |Valid: loss=1.178 938.784 0.650 938.134, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  93   1, time=  3.8s/  0.4s | lr=0.050 |Valid: loss=1.189 942.778 0.741 942.037, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  94   1, time=  3.7s/  0.4s | lr=0.050 |Valid: loss=1.158 942.270 0.577 941.693, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  95   1, time=  4.1s/  0.4s | lr=0.050 |Valid: loss=1.298 951.986 0.594 951.392, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  96   1, time=  4.1s/  0.6s | lr=0.050 |Valid: loss=1.227 943.408 0.774 942.634, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  97   1, time=  4.4s/  0.6s | lr=0.050 |Valid: loss=1.259 942.120 0.441 941.680, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  98   1, time=  4.4s/  0.4s | lr=0.050 |Valid: loss=1.213 937.469 0.701 936.767, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  99   1, time=  4.6s/  0.4s | lr=0.050 |Valid: loss=1.151 944.784 0.533 944.251, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch 100   1, time=  4.9s/  0.4s | lr=0.050 |Valid: loss=1.252 929.544 0.504 929.039, TAw acc= 67.4% |
+| Selected 2500 train exemplars, time=  0.1s
+Post Train Process
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=1.982 | TAw acc= 51.6%, forg=  6.7%| TAg acc= 17.2%, forg= 41.1% <<<
+>>> Test on task  1 : loss=1.637 | TAw acc= 55.2%, forg= 14.8%| TAg acc= 20.6%, forg= 47.8% <<<
+>>> Test on task  2 : loss=2.093 | TAw acc= 47.4%, forg=  9.8%| TAg acc= 12.7%, forg= 41.7% <<<
+>>> Test on task  3 : loss=1.723 | TAw acc= 58.1%, forg=  6.8%| TAg acc= 25.8%, forg= 35.0% <<<
+>>> Test on task  4 : loss=1.214 | TAw acc= 69.5%, forg=  0.0%| TAg acc= 64.1%, forg=  0.0% <<<
+Save at ../miniimagenet_der_result10t/miniimagenet_der
+************************************************************************************************************
+Task  5
+************************************************************************************************************
+[Outer Loop] Train Base 
+| O-Epoch   1   1, time=  5.7s/  0.5s | lr=0.050 |Valid: loss=1.600 1063.333 1.496 1061.837, TAw acc= 43.6% |
+[Outer Loop] Train Base 
+| O-Epoch   2   1, time=  4.8s/  0.5s | lr=0.050 |Valid: loss=1.541 1117.161 1.615 1115.546, TAw acc= 47.4% |
+[Outer Loop] Train Base 
+| O-Epoch   3   1, time=  5.8s/  0.5s | lr=0.050 |Valid: loss=1.601 1181.536 1.709 1179.828, TAw acc= 47.4% |
+[Outer Loop] Train Base 
+| O-Epoch   4   1, time=  5.2s/  0.4s | lr=0.050 |Valid: loss=1.571 1190.077 1.369 1188.708, TAw acc= 48.0% |
+[Outer Loop] Train Base 
+| O-Epoch   5   1, time=  5.1s/  0.4s | lr=0.050 |Valid: loss=1.560 1191.441 1.520 1189.922, TAw acc= 49.4% |
+[Outer Loop] Train Base 
+| O-Epoch   6   1, time=  5.3s/  1.4s | lr=0.050 |Valid: loss=1.544 1211.409 1.476 1209.933, TAw acc= 50.4% |
+[Outer Loop] Train Base 
+| O-Epoch   7   1, time=  5.4s/  0.4s | lr=0.050 |Valid: loss=1.497 1193.111 1.626 1191.485, TAw acc= 50.4% |
+[Outer Loop] Train Base 
+| O-Epoch   8   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=1.487 1194.781 1.216 1193.565, TAw acc= 52.4% |
+[Outer Loop] Train Base 
+| O-Epoch   9   1, time=  4.9s/  0.5s | lr=0.050 |Valid: loss=1.536 1218.688 1.302 1217.386, TAw acc= 50.4% |
+[Outer Loop] Train Base 
+| O-Epoch  10   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=1.580 1221.281 1.545 1219.735, TAw acc= 51.8% |
+[Outer Loop] Train Base 
+| O-Epoch  11   1, time=  5.2s/  0.4s | lr=0.050 |Valid: loss=1.711 1231.630 1.368 1230.262, TAw acc= 49.4% |
+[Outer Loop] Train Base 
+| O-Epoch  12   1, time=  5.8s/  0.6s | lr=0.050 |Valid: loss=1.587 1215.414 1.429 1213.985, TAw acc= 52.2% |
+[Outer Loop] Train Base 
+| O-Epoch  13   1, time=  5.4s/  0.4s | lr=0.050 |Valid: loss=1.654 1207.022 1.147 1205.875, TAw acc= 50.6% |
+[Outer Loop] Train Base 
+| O-Epoch  14   1, time=  5.3s/  0.5s | lr=0.050 |Valid: loss=1.609 1199.388 1.001 1198.387, TAw acc= 53.4% |
+[Outer Loop] Train Base 
+| O-Epoch  15   1, time=  5.6s/  0.5s | lr=0.050 |Valid: loss=1.659 1223.426 1.187 1222.239, TAw acc= 51.0% |
+[Outer Loop] Train Base 
+| O-Epoch  16   1, time=  5.3s/  0.5s | lr=0.050 |Valid: loss=1.771 1229.480 1.413 1228.068, TAw acc= 50.4% |
+[Outer Loop] Train Base 
+| O-Epoch  17   1, time=  5.0s/  0.6s | lr=0.050 |Valid: loss=1.651 1219.719 0.949 1218.770, TAw acc= 51.8% |
+[Outer Loop] Train Base 
+| O-Epoch  18   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=1.725 1196.723 1.135 1195.588, TAw acc= 52.4% |
+[Outer Loop] Train Base 
+| O-Epoch  19   1, time=  3.8s/  0.4s | lr=0.050 |Valid: loss=1.680 1213.030 1.143 1211.887, TAw acc= 49.4% |
+[Outer Loop] Train Base 
+| O-Epoch  20   1, time=  4.7s/  0.4s | lr=0.050 |Valid: loss=1.799 1204.014 0.963 1203.052, TAw acc= 50.0% |
+[Outer Loop] Train Base 
+| O-Epoch  21   1, time=  5.0s/  0.5s | lr=0.050 |Valid: loss=1.793 1216.195 1.006 1215.189, TAw acc= 52.4% |
+[Outer Loop] Train Base 
+| O-Epoch  22   1, time=  5.3s/  1.4s | lr=0.050 |Valid: loss=1.785 1214.152 1.146 1213.007, TAw acc= 50.6% |
+[Outer Loop] Train Base 
+| O-Epoch  23   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=1.747 1186.800 1.168 1185.632, TAw acc= 51.2% |
+[Outer Loop] Train Base 
+| O-Epoch  24   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=1.842 1198.746 0.960 1197.786, TAw acc= 47.4% |
+[Outer Loop] Train Base 
+| O-Epoch  25   1, time=  5.2s/  0.4s | lr=0.050 |Valid: loss=1.813 1216.766 0.939 1215.827, TAw acc= 50.4% |
+[Outer Loop] Train Base 
+| O-Epoch  26   1, time=  5.1s/  0.8s | lr=0.050 |Valid: loss=1.751 1198.971 1.140 1197.832, TAw acc= 46.4% |
+[Outer Loop] Train Base 
+| O-Epoch  27   1, time=  5.3s/  0.5s | lr=0.050 |Valid: loss=1.801 1197.351 1.082 1196.269, TAw acc= 50.2% |
+[Outer Loop] Train Base 
+| O-Epoch  28   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=1.853 1208.040 1.215 1206.825, TAw acc= 47.2% |
+[Outer Loop] Train Base 
+| O-Epoch  29   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=1.845 1196.328 1.023 1195.305, TAw acc= 49.2% |
+[Outer Loop] Train Base 
+| O-Epoch  30   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=1.747 1177.622 1.433 1176.189, TAw acc= 51.6% |
+[Outer Loop] Train Base 
+| O-Epoch  31   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=1.734 1172.002 0.942 1171.060, TAw acc= 52.4% |
+[Outer Loop] Train Base 
+| O-Epoch  32   1, time=  4.9s/  0.5s | lr=0.050 |Valid: loss=1.796 1190.787 1.144 1189.642, TAw acc= 52.6% |
+[Outer Loop] Train Base 
+| O-Epoch  33   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=1.842 1172.831 0.929 1171.902, TAw acc= 50.4% |
+[Outer Loop] Train Base 
+| O-Epoch  34   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=1.793 1179.383 0.854 1178.529, TAw acc= 49.8% |
+[Outer Loop] Train Base 
+| O-Epoch  35   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=1.870 1188.376 1.091 1187.285, TAw acc= 50.6% |
+[Outer Loop] Train Base 
+| O-Epoch  36   1, time=  5.3s/  0.5s | lr=0.050 |Valid: loss=1.829 1174.271 1.001 1173.270, TAw acc= 51.6% |
+[Outer Loop] Train Base 
+| O-Epoch  37   1, time=  5.2s/  0.4s | lr=0.050 |Valid: loss=2.002 1153.832 0.743 1153.088, TAw acc= 48.0% |
+[Outer Loop] Train Base 
+| O-Epoch  38   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=1.865 1183.726 1.034 1182.693, TAw acc= 51.4% |
+[Outer Loop] Train Base 
+| O-Epoch  39   1, time=  5.4s/  0.6s | lr=0.050 |Valid: loss=1.967 1166.615 0.777 1165.839, TAw acc= 47.2% |
+[Outer Loop] Train Base 
+| O-Epoch  40   1, time=  5.6s/  0.4s | lr=0.050 |Valid: loss=1.916 1163.037 0.763 1162.274, TAw acc= 50.8% |
+[Outer Loop] Train Base 
+| O-Epoch  41   1, time=  5.9s/  0.4s | lr=0.050 |Valid: loss=1.982 1180.068 1.228 1178.840, TAw acc= 50.6% |
+[Outer Loop] Train Base 
+| O-Epoch  42   1, time=  5.8s/  0.5s | lr=0.050 |Valid: loss=2.028 1196.235 1.058 1195.177, TAw acc= 48.8% |
+[Outer Loop] Train Base 
+| O-Epoch  43   1, time=  5.8s/  0.5s | lr=0.050 |Valid: loss=1.982 1182.814 0.906 1181.908, TAw acc= 49.8% |
+[Outer Loop] Train Base 
+| O-Epoch  44   1, time=  5.5s/  0.5s | lr=0.050 |Valid: loss=2.004 1170.332 0.966 1169.366, TAw acc= 49.8% |
+[Outer Loop] Train Base 
+| O-Epoch  45   1, time=  5.6s/  0.5s | lr=0.050 |Valid: loss=1.972 1200.963 1.077 1199.886, TAw acc= 49.2% |
+[Outer Loop] Train Base 
+| O-Epoch  46   1, time=  5.4s/  0.5s | lr=0.050 |Valid: loss=1.920 1175.439 0.802 1174.637, TAw acc= 50.0% |
+[Outer Loop] Train Base 
+| O-Epoch  47   1, time=  5.5s/  0.5s | lr=0.050 |Valid: loss=1.918 1195.792 0.999 1194.793, TAw acc= 51.0% |
+[Outer Loop] Train Base 
+| O-Epoch  48   1, time=  5.5s/  0.5s | lr=0.050 |Valid: loss=1.958 1155.811 0.863 1154.948, TAw acc= 50.0% |
+[Outer Loop] Train Base 
+| O-Epoch  49   1, time=  5.2s/  0.4s | lr=0.050 |Valid: loss=1.948 1171.487 0.840 1170.647, TAw acc= 50.4% |
+[Outer Loop] Train Base 
+| O-Epoch  50   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=1.930 1167.845 1.058 1166.787, TAw acc= 51.6% |
+[Outer Loop] Train Base 
+| O-Epoch  51   1, time=  5.3s/  0.4s | lr=0.050 |Valid: loss=1.970 1172.289 0.901 1171.388, TAw acc= 50.0% |
+[Outer Loop] Train Base 
+| O-Epoch  52   1, time=  5.3s/  0.5s | lr=0.050 |Valid: loss=2.052 1171.422 1.029 1170.393, TAw acc= 52.8% |
+[Outer Loop] Train Base 
+| O-Epoch  53   1, time=  5.2s/  0.4s | lr=0.050 |Valid: loss=2.064 1171.296 0.917 1170.379, TAw acc= 51.6% |
+[Outer Loop] Train Base 
+| O-Epoch  54   1, time=  5.1s/  0.4s | lr=0.050 |Valid: loss=1.996 1162.272 0.816 1161.457, TAw acc= 50.2% |
+[Outer Loop] Train Base 
+| O-Epoch  55   1, time=  5.3s/  0.5s | lr=0.050 |Valid: loss=1.933 1148.586 0.846 1147.740, TAw acc= 51.6% |
+[Outer Loop] Train Base 
+| O-Epoch  56   1, time=  5.3s/  0.5s | lr=0.050 |Valid: loss=1.967 1159.730 0.857 1158.873, TAw acc= 50.4% |
+[Outer Loop] Train Base 
+| O-Epoch  57   1, time=  5.2s/  0.4s | lr=0.050 |Valid: loss=1.941 1179.154 0.928 1178.226, TAw acc= 52.2% |
+[Outer Loop] Train Base 
+| O-Epoch  58   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=1.909 1165.856 1.283 1164.573, TAw acc= 49.6% |
+[Outer Loop] Train Base 
+| O-Epoch  59   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=1.956 1167.854 0.908 1166.946, TAw acc= 50.8% |
+[Outer Loop] Train Base 
+| O-Epoch  60   1, time=  5.0s/  0.5s | lr=0.050 |Valid: loss=2.001 1162.371 1.002 1161.369, TAw acc= 53.6% |
+[Outer Loop] Train Base 
+| O-Epoch  61   1, time=  5.0s/  0.5s | lr=0.050 |Valid: loss=2.008 1162.964 0.845 1162.119, TAw acc= 51.4% |
+[Outer Loop] Train Base 
+| O-Epoch  62   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=1.952 1143.374 0.846 1142.529, TAw acc= 49.8% |
+[Outer Loop] Train Base 
+| O-Epoch  63   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=1.940 1154.123 0.483 1153.640, TAw acc= 49.2% |
+[Outer Loop] Train Base 
+| O-Epoch  64   1, time=  5.5s/  0.5s | lr=0.050 |Valid: loss=1.883 1148.722 0.764 1147.958, TAw acc= 52.8% |
+[Outer Loop] Train Base 
+| O-Epoch  65   1, time=  5.6s/  0.5s | lr=0.050 |Valid: loss=1.904 1177.148 0.695 1176.453, TAw acc= 52.0% |
+[Outer Loop] Train Base 
+| O-Epoch  66   1, time=  5.6s/  0.4s | lr=0.050 |Valid: loss=1.930 1160.720 1.025 1159.695, TAw acc= 51.6% |
+[Outer Loop] Train Base 
+| O-Epoch  67   1, time=  5.9s/  0.4s | lr=0.050 |Valid: loss=1.818 1153.115 0.702 1152.414, TAw acc= 52.4% |
+[Outer Loop] Train Base 
+| O-Epoch  68   1, time=  5.8s/  0.4s | lr=0.050 |Valid: loss=1.876 1151.746 0.920 1150.826, TAw acc= 51.6% |
+[Outer Loop] Train Base 
+| O-Epoch  69   1, time=  5.7s/  0.4s | lr=0.050 |Valid: loss=1.906 1155.147 1.057 1154.090, TAw acc= 52.2% |
+[Outer Loop] Train Base 
+| O-Epoch  70   1, time=  5.6s/  0.6s | lr=0.050 |Valid: loss=1.956 1147.611 0.689 1146.922, TAw acc= 52.0% |
+[Outer Loop] Train Base 
+| O-Epoch  71   1, time=  5.7s/  0.4s | lr=0.050 |Valid: loss=2.042 1164.065 0.846 1163.220, TAw acc= 49.6% |
+[Outer Loop] Train Base 
+| O-Epoch  72   1, time=  5.6s/  0.4s | lr=0.050 |Valid: loss=2.083 1159.990 0.714 1159.276, TAw acc= 49.0% |
+[Outer Loop] Train Base 
+| O-Epoch  73   1, time=  5.5s/  0.5s | lr=0.050 |Valid: loss=1.918 1155.397 1.125 1154.272, TAw acc= 51.0% |
+[Outer Loop] Train Base 
+| O-Epoch  74   1, time=  5.4s/  0.5s | lr=0.050 |Valid: loss=2.045 1152.096 0.829 1151.266, TAw acc= 49.2% |
+[Outer Loop] Train Base 
+| O-Epoch  75   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=2.004 1139.045 0.655 1138.390, TAw acc= 50.8% |
+[Outer Loop] Train Base 
+| O-Epoch  76   1, time=  4.9s/  0.5s | lr=0.050 |Valid: loss=1.941 1142.746 0.649 1142.097, TAw acc= 51.6% |
+[Outer Loop] Train Base 
+| O-Epoch  77   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=2.054 1136.958 0.757 1136.201, TAw acc= 48.6% |
+[Outer Loop] Train Base 
+| O-Epoch  78   1, time=  5.1s/  0.4s | lr=0.050 |Valid: loss=2.006 1137.164 0.676 1136.488, TAw acc= 51.6% |
+[Outer Loop] Train Base 
+| O-Epoch  79   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=2.129 1126.702 0.750 1125.952, TAw acc= 50.8% |
+[Outer Loop] Train Base 
+| O-Epoch  80   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=2.126 1140.708 0.723 1139.985, TAw acc= 49.4% |
+[Outer Loop] Train Base 
+| O-Epoch  81   1, time=  5.0s/  0.5s | lr=0.050 |Valid: loss=1.986 1132.975 0.732 1132.243, TAw acc= 51.8% |
+[Outer Loop] Train Base 
+| O-Epoch  82   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=2.051 1123.576 0.800 1122.776, TAw acc= 48.2% |
+[Outer Loop] Train Base 
+| O-Epoch  83   1, time=  5.3s/  0.4s | lr=0.050 |Valid: loss=2.071 1143.666 0.627 1143.039, TAw acc= 51.2% |
+[Outer Loop] Train Base 
+| O-Epoch  84   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=2.108 1132.570 0.903 1131.666, TAw acc= 50.8% |
+[Outer Loop] Train Base 
+| O-Epoch  85   1, time=  5.3s/  0.4s | lr=0.050 |Valid: loss=2.018 1137.950 0.762 1137.188, TAw acc= 51.8% |
+[Outer Loop] Train Base 
+| O-Epoch  86   1, time=  5.0s/  0.5s | lr=0.050 |Valid: loss=2.041 1133.558 0.983 1132.575, TAw acc= 51.2% |
+[Outer Loop] Train Base 
+| O-Epoch  87   1, time=  5.3s/  0.6s | lr=0.050 |Valid: loss=2.031 1111.449 0.791 1110.657, TAw acc= 50.8% |
+[Outer Loop] Train Base 
+| O-Epoch  88   1, time=  5.6s/  0.4s | lr=0.050 |Valid: loss=2.222 1126.654 0.664 1125.990, TAw acc= 49.2% |
+[Outer Loop] Train Base 
+| O-Epoch  89   1, time=  5.7s/  0.4s | lr=0.050 |Valid: loss=2.172 1127.101 1.095 1126.006, TAw acc= 50.6% |
+[Outer Loop] Train Base 
+| O-Epoch  90   1, time=  5.8s/  0.4s | lr=0.050 |Valid: loss=2.069 1141.786 0.990 1140.796, TAw acc= 48.8% |
+[Outer Loop] Train Base 
+| O-Epoch  91   1, time=  5.6s/  0.5s | lr=0.050 |Valid: loss=2.053 1130.709 0.771 1129.938, TAw acc= 52.8% |
+[Outer Loop] Train Base 
+| O-Epoch  92   1, time=  5.6s/  0.5s | lr=0.050 |Valid: loss=2.020 1142.407 0.797 1141.610, TAw acc= 51.2% |
+[Outer Loop] Train Base 
+| O-Epoch  93   1, time=  5.3s/  0.5s | lr=0.050 |Valid: loss=2.045 1144.718 0.899 1143.819, TAw acc= 49.6% |
+[Outer Loop] Train Base 
+| O-Epoch  94   1, time=  4.9s/  0.5s | lr=0.050 |Valid: loss=2.100 1141.102 0.671 1140.431, TAw acc= 52.2% |
+[Outer Loop] Train Base 
+| O-Epoch  95   1, time=  5.3s/  0.5s | lr=0.050 |Valid: loss=2.255 1126.401 0.608 1125.793, TAw acc= 50.0% |
+[Outer Loop] Train Base 
+| O-Epoch  96   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=2.085 1126.699 0.604 1126.095, TAw acc= 53.6% |
+[Outer Loop] Train Base 
+| O-Epoch  97   1, time=  5.1s/  0.4s | lr=0.050 |Valid: loss=2.053 1136.164 1.007 1135.157, TAw acc= 50.6% |
+[Outer Loop] Train Base 
+| O-Epoch  98   1, time=  5.3s/  0.5s | lr=0.050 |Valid: loss=2.101 1132.675 0.700 1131.974, TAw acc= 50.6% |
+[Outer Loop] Train Base 
+| O-Epoch  99   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=2.071 1121.218 0.630 1120.587, TAw acc= 50.4% |
+[Outer Loop] Train Base 
+| O-Epoch 100   1, time=  5.3s/  0.5s | lr=0.050 |Valid: loss=2.088 1140.050 0.712 1139.338, TAw acc= 51.8% |
+| Selected 3000 train exemplars, time=  0.1s
+Post Train Process
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=2.042 | TAw acc= 47.8%, forg= 10.5%| TAg acc= 16.4%, forg= 41.9% <<<
+>>> Test on task  1 : loss=1.720 | TAw acc= 52.4%, forg= 17.6%| TAg acc= 17.7%, forg= 50.7% <<<
+>>> Test on task  2 : loss=2.162 | TAw acc= 45.0%, forg= 12.2%| TAg acc= 10.8%, forg= 43.6% <<<
+>>> Test on task  3 : loss=1.716 | TAw acc= 56.5%, forg=  8.4%| TAg acc= 16.1%, forg= 44.7% <<<
+>>> Test on task  4 : loss=1.558 | TAw acc= 59.1%, forg= 10.4%| TAg acc= 21.9%, forg= 42.2% <<<
+>>> Test on task  5 : loss=1.831 | TAw acc= 55.0%, forg=  0.0%| TAg acc= 50.2%, forg=  0.0% <<<
+Save at ../miniimagenet_der_result10t/miniimagenet_der
+************************************************************************************************************
+Task  6
+************************************************************************************************************
+[Outer Loop] Train Base 
+| O-Epoch   1   1, time=  6.8s/  0.9s | lr=0.050 |Valid: loss=1.127 1248.428 1.635 1246.793, TAw acc= 59.4% |
+[Outer Loop] Train Base 
+| O-Epoch   2   1, time=  6.5s/  0.5s | lr=0.050 |Valid: loss=1.017 1266.285 1.416 1264.869, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch   3   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=0.984 1354.611 1.101 1353.510, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch   4   1, time=  6.5s/  0.5s | lr=0.050 |Valid: loss=0.926 1369.912 1.194 1368.718, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch   5   1, time=  6.4s/  0.5s | lr=0.050 |Valid: loss=0.929 1349.656 1.211 1348.445, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch   6   1, time=  6.8s/  0.4s | lr=0.050 |Valid: loss=0.893 1380.092 0.993 1379.099, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch   7   1, time=  6.5s/  0.6s | lr=0.050 |Valid: loss=0.963 1379.601 1.311 1378.290, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch   8   1, time=  6.7s/  0.4s | lr=0.050 |Valid: loss=0.948 1378.953 1.119 1377.834, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch   9   1, time=  6.3s/  0.5s | lr=0.050 |Valid: loss=0.964 1363.767 1.703 1362.064, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  10   1, time=  6.5s/  0.5s | lr=0.050 |Valid: loss=0.965 1360.621 1.026 1359.596, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  11   1, time=  6.5s/  0.5s | lr=0.050 |Valid: loss=0.958 1388.201 0.802 1387.399, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch  12   1, time=  6.7s/  0.7s | lr=0.050 |Valid: loss=1.076 1389.668 1.084 1388.584, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch  13   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=0.974 1372.222 1.011 1371.212, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  14   1, time=  6.2s/  0.5s | lr=0.050 |Valid: loss=1.005 1371.065 0.972 1370.092, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  15   1, time=  6.7s/  0.4s | lr=0.050 |Valid: loss=1.025 1362.133 1.169 1360.964, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  16   1, time=  6.5s/  0.5s | lr=0.050 |Valid: loss=1.030 1365.305 0.980 1364.325, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  17   1, time=  6.5s/  0.5s | lr=0.050 |Valid: loss=0.986 1373.255 1.115 1372.140, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  18   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=1.060 1361.584 1.166 1360.418, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  19   1, time=  5.1s/  0.5s | lr=0.050 |Valid: loss=0.966 1361.469 1.321 1360.149, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  20   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=0.973 1355.110 0.816 1354.294, TAw acc= 71.2% |
+[Outer Loop] Train Base 
+| O-Epoch  21   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=0.952 1362.755 0.715 1362.040, TAw acc= 70.4% |
+[Outer Loop] Train Base 
+| O-Epoch  22   1, time=  6.5s/  0.5s | lr=0.050 |Valid: loss=1.018 1353.443 1.102 1352.341, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  23   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=0.971 1376.647 0.815 1375.832, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  24   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=0.974 1362.629 0.818 1361.811, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  25   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=1.049 1360.516 0.918 1359.598, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch  26   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=1.112 1359.918 0.681 1359.237, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  27   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=0.972 1343.656 1.055 1342.601, TAw acc= 70.4% |
+[Outer Loop] Train Base 
+| O-Epoch  28   1, time=  6.6s/  0.4s | lr=0.050 |Valid: loss=1.046 1323.158 1.062 1322.096, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  29   1, time=  6.9s/  0.5s | lr=0.050 |Valid: loss=1.021 1346.766 0.860 1345.906, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  30   1, time=  6.5s/  0.5s | lr=0.050 |Valid: loss=1.031 1366.028 0.931 1365.097, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  31   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=1.193 1351.207 0.747 1350.460, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch  32   1, time=  6.2s/  0.5s | lr=0.050 |Valid: loss=1.071 1313.957 1.190 1312.767, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  33   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=1.038 1323.196 0.780 1322.417, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  34   1, time=  6.6s/  0.6s | lr=0.050 |Valid: loss=1.015 1345.173 1.034 1344.140, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  35   1, time=  6.5s/  0.5s | lr=0.050 |Valid: loss=1.089 1342.110 0.718 1341.392, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  36   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=0.990 1320.755 0.776 1319.979, TAw acc= 72.0% |
+[Outer Loop] Train Base 
+| O-Epoch  37   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=0.995 1313.989 0.754 1313.235, TAw acc= 71.0% |
+[Outer Loop] Train Base 
+| O-Epoch  38   1, time=  6.6s/  1.5s | lr=0.050 |Valid: loss=0.979 1339.970 0.764 1339.206, TAw acc= 71.4% |
+[Outer Loop] Train Base 
+| O-Epoch  39   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=1.011 1320.917 0.720 1320.197, TAw acc= 71.6% |
+[Outer Loop] Train Base 
+| O-Epoch  40   1, time=  7.0s/  0.4s | lr=0.050 |Valid: loss=1.239 1325.558 0.675 1324.883, TAw acc= 64.2% |
+[Outer Loop] Train Base 
+| O-Epoch  41   1, time=  6.5s/  0.4s | lr=0.050 |Valid: loss=1.045 1322.438 0.976 1321.462, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  42   1, time=  6.6s/  0.4s | lr=0.050 |Valid: loss=1.101 1338.061 0.748 1337.313, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  43   1, time=  6.6s/  0.6s | lr=0.050 |Valid: loss=1.195 1313.877 0.438 1313.439, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  44   1, time=  6.9s/  0.4s | lr=0.050 |Valid: loss=1.064 1323.357 0.695 1322.662, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  45   1, time=  6.4s/  0.5s | lr=0.050 |Valid: loss=1.098 1329.442 0.623 1328.819, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  46   1, time=  6.7s/  0.4s | lr=0.050 |Valid: loss=1.042 1326.000 0.900 1325.100, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch  47   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=1.067 1312.853 0.656 1312.198, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  48   1, time=  6.8s/  0.5s | lr=0.050 |Valid: loss=1.176 1306.215 0.481 1305.734, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch  49   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=1.136 1310.353 0.958 1309.395, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  50   1, time=  6.8s/  0.5s | lr=0.050 |Valid: loss=1.152 1341.857 0.751 1341.106, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch  51   1, time=  6.3s/  0.5s | lr=0.050 |Valid: loss=1.087 1327.328 0.831 1326.497, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  52   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=0.974 1336.514 0.822 1335.693, TAw acc= 71.0% |
+[Outer Loop] Train Base 
+| O-Epoch  53   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=1.087 1319.789 0.578 1319.212, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  54   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=1.181 1304.384 0.939 1303.445, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  55   1, time=  6.6s/  0.4s | lr=0.050 |Valid: loss=1.103 1319.220 0.570 1318.650, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  56   1, time=  6.5s/  0.4s | lr=0.050 |Valid: loss=0.941 1301.338 1.054 1300.284, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  57   1, time=  6.7s/  0.4s | lr=0.050 |Valid: loss=0.935 1297.876 0.680 1297.196, TAw acc= 71.8% |
+[Outer Loop] Train Base 
+| O-Epoch  58   1, time=  6.8s/  0.4s | lr=0.050 |Valid: loss=0.997 1303.198 0.758 1302.439, TAw acc= 70.6% |
+[Outer Loop] Train Base 
+| O-Epoch  59   1, time=  7.0s/  0.6s | lr=0.050 |Valid: loss=1.068 1286.275 0.667 1285.609, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  60   1, time=  7.1s/  0.4s | lr=0.050 |Valid: loss=1.132 1307.894 1.018 1306.876, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  61   1, time=  7.1s/  0.5s | lr=0.050 |Valid: loss=1.129 1300.802 0.693 1300.109, TAw acc= 70.6% |
+[Outer Loop] Train Base 
+| O-Epoch  62   1, time=  7.4s/  0.5s | lr=0.050 |Valid: loss=1.103 1308.598 0.726 1307.873, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch  63   1, time=  7.0s/  0.4s | lr=0.050 |Valid: loss=1.190 1295.583 0.513 1295.070, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  64   1, time=  8.4s/  0.4s | lr=0.050 |Valid: loss=1.124 1302.297 0.696 1301.601, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  65   1, time=  7.4s/  0.5s | lr=0.050 |Valid: loss=1.124 1270.768 0.656 1270.112, TAw acc= 71.8% |
+[Outer Loop] Train Base 
+| O-Epoch  66   1, time=  7.1s/  0.5s | lr=0.050 |Valid: loss=1.017 1294.439 0.545 1293.894, TAw acc= 71.4% |
+[Outer Loop] Train Base 
+| O-Epoch  67   1, time=  6.9s/  0.6s | lr=0.050 |Valid: loss=1.006 1298.706 0.663 1298.043, TAw acc= 71.4% |
+[Outer Loop] Train Base 
+| O-Epoch  68   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=1.061 1322.026 0.967 1321.059, TAw acc= 71.2% |
+[Outer Loop] Train Base 
+| O-Epoch  69   1, time=  6.5s/  0.9s | lr=0.050 |Valid: loss=1.039 1291.215 0.838 1290.378, TAw acc= 71.0% |
+[Outer Loop] Train Base 
+| O-Epoch  70   1, time=  6.3s/  0.5s | lr=0.050 |Valid: loss=1.126 1304.213 0.661 1303.552, TAw acc= 70.4% |
+[Outer Loop] Train Base 
+| O-Epoch  71   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=1.085 1310.054 0.737 1309.317, TAw acc= 71.6% |
+[Outer Loop] Train Base 
+| O-Epoch  72   1, time=  6.6s/  0.4s | lr=0.050 |Valid: loss=1.069 1304.493 0.710 1303.783, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  73   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=1.188 1284.793 0.936 1283.857, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  74   1, time=  6.7s/  0.4s | lr=0.050 |Valid: loss=1.110 1289.927 0.810 1289.117, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch  75   1, time=  6.7s/  0.4s | lr=0.050 |Valid: loss=1.028 1289.234 0.709 1288.526, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch  76   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=1.080 1291.216 0.678 1290.538, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  77   1, time=  6.6s/  0.7s | lr=0.050 |Valid: loss=1.146 1296.336 1.038 1295.298, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  78   1, time=  6.5s/  0.5s | lr=0.050 |Valid: loss=1.139 1266.434 0.855 1265.579, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  79   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=1.038 1279.607 0.709 1278.898, TAw acc= 71.0% |
+[Outer Loop] Train Base 
+| O-Epoch  80   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=1.099 1287.718 0.514 1287.204, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch  81   1, time=  7.6s/  0.5s | lr=0.050 |Valid: loss=1.083 1287.753 0.538 1287.215, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  82   1, time=  6.7s/  0.4s | lr=0.050 |Valid: loss=1.044 1298.846 0.815 1298.030, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  83   1, time=  6.7s/  0.4s | lr=0.050 |Valid: loss=1.100 1285.961 0.691 1285.270, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  84   1, time=  6.8s/  0.5s | lr=0.050 |Valid: loss=1.075 1293.994 0.711 1293.284, TAw acc= 72.0% |
+[Outer Loop] Train Base 
+| O-Epoch  85   1, time=  6.6s/  0.6s | lr=0.050 |Valid: loss=1.132 1290.698 0.626 1290.072, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  86   1, time=  6.8s/  0.4s | lr=0.050 |Valid: loss=1.145 1289.505 0.653 1288.852, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  87   1, time=  6.0s/  0.4s | lr=0.050 |Valid: loss=1.076 1301.592 0.672 1300.920, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch  88   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=1.070 1287.783 0.540 1287.242, TAw acc= 70.4% |
+[Outer Loop] Train Base 
+| O-Epoch  89   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=1.142 1268.059 0.570 1267.489, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  90   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=1.051 1283.083 0.503 1282.580, TAw acc= 71.2% |
+[Outer Loop] Train Base 
+| O-Epoch  91   1, time=  6.6s/  0.5s | lr=0.050 |Valid: loss=1.165 1279.164 0.691 1278.473, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  92   1, time=  6.9s/  0.4s | lr=0.050 |Valid: loss=1.210 1292.792 0.858 1291.934, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  93   1, time=  6.6s/  0.4s | lr=0.050 |Valid: loss=1.076 1290.664 1.131 1289.533, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  94   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=1.066 1271.084 0.721 1270.362, TAw acc= 72.0% |
+[Outer Loop] Train Base 
+| O-Epoch  95   1, time=  6.3s/  0.5s | lr=0.050 |Valid: loss=1.021 1277.730 1.004 1276.726, TAw acc= 71.4% |
+[Outer Loop] Train Base 
+| O-Epoch  96   1, time=  6.7s/  0.4s | lr=0.050 |Valid: loss=0.980 1284.579 0.655 1283.924, TAw acc= 72.8% |
+[Outer Loop] Train Base 
+| O-Epoch  97   1, time=  6.4s/  0.5s | lr=0.050 |Valid: loss=1.189 1289.681 0.772 1288.909, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  98   1, time=  6.7s/  0.5s | lr=0.050 |Valid: loss=1.141 1273.841 0.733 1273.108, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  99   1, time=  6.7s/  0.4s | lr=0.050 |Valid: loss=1.115 1280.859 0.499 1280.360, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch 100   1, time=  6.8s/  0.4s | lr=0.050 |Valid: loss=0.971 1282.712 0.616 1282.095, TAw acc= 70.8% |
+| Selected 3500 train exemplars, time=  0.1s
+Post Train Process
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=1.980 | TAw acc= 48.6%, forg=  9.7%| TAg acc= 13.8%, forg= 44.5% <<<
+>>> Test on task  1 : loss=1.633 | TAw acc= 57.2%, forg= 12.8%| TAg acc= 21.2%, forg= 47.2% <<<
+>>> Test on task  2 : loss=2.082 | TAw acc= 43.4%, forg= 13.8%| TAg acc= 11.8%, forg= 42.6% <<<
+>>> Test on task  3 : loss=1.684 | TAw acc= 55.6%, forg=  9.3%| TAg acc= 17.3%, forg= 43.5% <<<
+>>> Test on task  4 : loss=1.642 | TAw acc= 58.2%, forg= 11.3%| TAg acc= 22.3%, forg= 41.8% <<<
+>>> Test on task  5 : loss=2.332 | TAw acc= 43.7%, forg= 11.3%| TAg acc= 13.9%, forg= 36.3% <<<
+>>> Test on task  6 : loss=1.198 | TAw acc= 68.0%, forg=  0.0%| TAg acc= 62.6%, forg=  0.0% <<<
+Save at ../miniimagenet_der_result10t/miniimagenet_der
+************************************************************************************************************
+Task  7
+************************************************************************************************************
+[Outer Loop] Train Base 
+| O-Epoch   1   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.145 1333.894 1.405 1332.489, TAw acc= 60.2% |
+[Outer Loop] Train Base 
+| O-Epoch   2   1, time=  8.1s/  0.5s | lr=0.050 |Valid: loss=1.117 1417.499 1.233 1416.265, TAw acc= 60.6% |
+[Outer Loop] Train Base 
+| O-Epoch   3   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.187 1483.227 1.297 1481.930, TAw acc= 60.4% |
+[Outer Loop] Train Base 
+| O-Epoch   4   1, time=  8.3s/  0.4s | lr=0.050 |Valid: loss=1.076 1469.968 1.256 1468.711, TAw acc= 63.2% |
+[Outer Loop] Train Base 
+| O-Epoch   5   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.095 1477.312 1.308 1476.004, TAw acc= 63.4% |
+[Outer Loop] Train Base 
+| O-Epoch   6   1, time=  8.2s/  0.6s | lr=0.050 |Valid: loss=1.120 1484.282 1.171 1483.111, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch   7   1, time=  8.1s/  0.4s | lr=0.050 |Valid: loss=1.073 1491.141 1.048 1490.092, TAw acc= 62.6% |
+[Outer Loop] Train Base 
+| O-Epoch   8   1, time=  8.1s/  0.5s | lr=0.050 |Valid: loss=1.047 1491.941 0.941 1491.000, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch   9   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.033 1491.059 0.979 1490.081, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  10   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.120 1495.484 1.080 1494.404, TAw acc= 63.8% |
+[Outer Loop] Train Base 
+| O-Epoch  11   1, time=  8.1s/  0.5s | lr=0.050 |Valid: loss=1.100 1492.924 0.867 1492.057, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  12   1, time=  8.4s/  0.5s | lr=0.050 |Valid: loss=1.050 1495.231 1.102 1494.128, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  13   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.185 1480.769 1.105 1479.664, TAw acc= 64.8% |
+[Outer Loop] Train Base 
+| O-Epoch  14   1, time=  8.1s/  0.6s | lr=0.050 |Valid: loss=1.052 1499.790 1.089 1498.701, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  15   1, time=  8.2s/  0.6s | lr=0.050 |Valid: loss=1.105 1521.205 1.054 1520.151, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch  16   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.195 1471.783 1.352 1470.431, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  17   1, time=  8.2s/  0.4s | lr=0.050 |Valid: loss=1.005 1499.012 1.200 1497.811, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  18   1, time=  5.2s/  0.5s | lr=0.050 |Valid: loss=1.083 1479.261 0.936 1478.325, TAw acc= 64.0% |
+[Outer Loop] Train Base 
+| O-Epoch  19   1, time=  8.4s/  0.5s | lr=0.050 |Valid: loss=1.156 1468.691 1.023 1467.668, TAw acc= 64.6% |
+[Outer Loop] Train Base 
+| O-Epoch  20   1, time=  8.4s/  0.4s | lr=0.050 |Valid: loss=1.236 1460.500 0.909 1459.591, TAw acc= 65.0% |
+[Outer Loop] Train Base 
+| O-Epoch  21   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.187 1481.801 1.011 1480.790, TAw acc= 64.8% |
+[Outer Loop] Train Base 
+| O-Epoch  22   1, time=  8.1s/  0.6s | lr=0.050 |Valid: loss=1.095 1458.111 0.876 1457.235, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  23   1, time=  8.4s/  0.5s | lr=0.050 |Valid: loss=1.176 1443.995 0.731 1443.264, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  24   1, time=  8.3s/  0.6s | lr=0.050 |Valid: loss=1.114 1453.904 1.205 1452.700, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  25   1, time=  8.1s/  0.4s | lr=0.050 |Valid: loss=1.209 1449.260 1.093 1448.167, TAw acc= 64.6% |
+[Outer Loop] Train Base 
+| O-Epoch  26   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.157 1447.082 0.595 1446.487, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  27   1, time=  8.2s/  0.4s | lr=0.050 |Valid: loss=1.149 1456.257 1.071 1455.186, TAw acc= 64.8% |
+[Outer Loop] Train Base 
+| O-Epoch  28   1, time=  8.3s/  0.4s | lr=0.050 |Valid: loss=1.088 1441.170 0.914 1440.257, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  29   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.153 1462.359 0.847 1461.512, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  30   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.333 1445.071 0.960 1444.112, TAw acc= 63.2% |
+[Outer Loop] Train Base 
+| O-Epoch  31   1, time=  8.4s/  0.5s | lr=0.050 |Valid: loss=1.173 1442.927 0.962 1441.965, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  32   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.186 1474.502 0.757 1473.745, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  33   1, time=  8.0s/  0.4s | lr=0.050 |Valid: loss=1.223 1438.999 0.834 1438.165, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch  34   1, time=  8.1s/  0.5s | lr=0.050 |Valid: loss=1.250 1439.901 0.798 1439.103, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  35   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.237 1454.133 0.942 1453.190, TAw acc= 65.0% |
+[Outer Loop] Train Base 
+| O-Epoch  36   1, time=  7.9s/  0.6s | lr=0.050 |Valid: loss=1.278 1444.890 0.628 1444.262, TAw acc= 63.4% |
+[Outer Loop] Train Base 
+| O-Epoch  37   1, time=  7.9s/  0.5s | lr=0.050 |Valid: loss=1.203 1446.425 0.982 1445.444, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  38   1, time=  8.4s/  0.5s | lr=0.050 |Valid: loss=1.291 1443.641 0.733 1442.909, TAw acc= 63.8% |
+[Outer Loop] Train Base 
+| O-Epoch  39   1, time=  8.1s/  0.5s | lr=0.050 |Valid: loss=1.232 1443.008 0.572 1442.436, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  40   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.253 1441.983 0.866 1441.117, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch  41   1, time=  9.4s/  0.4s | lr=0.050 |Valid: loss=1.273 1446.684 1.040 1445.644, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  42   1, time=  8.4s/  0.5s | lr=0.050 |Valid: loss=1.234 1437.655 0.644 1437.011, TAw acc= 64.6% |
+[Outer Loop] Train Base 
+| O-Epoch  43   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.173 1440.777 0.934 1439.843, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch  44   1, time=  8.3s/  0.4s | lr=0.050 |Valid: loss=1.200 1439.492 0.967 1438.525, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  45   1, time=  8.3s/  0.4s | lr=0.050 |Valid: loss=1.298 1447.722 0.841 1446.881, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch  46   1, time=  8.5s/  0.8s | lr=0.050 |Valid: loss=1.292 1411.803 0.798 1411.005, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch  47   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.223 1450.233 1.059 1449.174, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  48   1, time=  8.3s/  0.4s | lr=0.050 |Valid: loss=1.155 1429.389 0.788 1428.601, TAw acc= 68.8% |
+[Outer Loop] Train Base 
+| O-Epoch  49   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.233 1423.299 0.658 1422.642, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch  50   1, time=  8.3s/  0.4s | lr=0.050 |Valid: loss=1.152 1414.378 0.887 1413.491, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  51   1, time=  8.7s/  0.5s | lr=0.050 |Valid: loss=1.399 1457.820 0.768 1457.052, TAw acc= 64.8% |
+[Outer Loop] Train Base 
+| O-Epoch  52   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=1.227 1415.918 0.717 1415.201, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  53   1, time=  9.0s/  0.5s | lr=0.050 |Valid: loss=1.307 1435.217 0.868 1434.349, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch  54   1, time=  9.0s/  0.5s | lr=0.050 |Valid: loss=1.288 1420.573 0.786 1419.787, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  55   1, time=  8.9s/  0.5s | lr=0.050 |Valid: loss=1.267 1420.484 0.860 1419.623, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  56   1, time=  8.7s/  0.5s | lr=0.050 |Valid: loss=1.293 1424.903 0.567 1424.336, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  57   1, time=  8.4s/  0.5s | lr=0.050 |Valid: loss=1.374 1433.836 0.616 1433.221, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch  58   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.352 1438.068 0.898 1437.170, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  59   1, time=  8.3s/  0.6s | lr=0.050 |Valid: loss=1.315 1437.614 0.884 1436.730, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  60   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.286 1419.432 0.759 1418.672, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch  61   1, time=  8.3s/  0.7s | lr=0.050 |Valid: loss=1.359 1421.115 0.902 1420.213, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch  62   1, time=  8.3s/  0.4s | lr=0.050 |Valid: loss=1.267 1439.724 0.743 1438.981, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  63   1, time=  8.5s/  0.5s | lr=0.050 |Valid: loss=1.208 1438.155 0.845 1437.311, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  64   1, time=  8.1s/  0.6s | lr=0.050 |Valid: loss=1.270 1400.888 0.705 1400.183, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch  65   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.393 1427.630 0.769 1426.862, TAw acc= 64.6% |
+[Outer Loop] Train Base 
+| O-Epoch  66   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.275 1420.958 0.934 1420.024, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  67   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.286 1446.560 0.910 1445.651, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  68   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.332 1424.998 0.920 1424.079, TAw acc= 64.0% |
+[Outer Loop] Train Base 
+| O-Epoch  69   1, time=  8.3s/  0.5s | lr=0.050 |Valid: loss=1.281 1430.915 0.630 1430.285, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  70   1, time=  8.3s/  0.4s | lr=0.050 |Valid: loss=1.387 1444.869 0.675 1444.195, TAw acc= 65.0% |
+[Outer Loop] Train Base 
+| O-Epoch  71   1, time=  8.1s/  0.5s | lr=0.050 |Valid: loss=1.173 1432.798 0.822 1431.976, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  72   1, time=  8.2s/  0.4s | lr=0.050 |Valid: loss=1.332 1440.261 0.894 1439.367, TAw acc= 65.0% |
+[Outer Loop] Train Base 
+| O-Epoch  73   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.334 1423.755 0.968 1422.787, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch  74   1, time=  8.2s/  0.4s | lr=0.050 |Valid: loss=1.239 1427.889 0.716 1427.173, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  75   1, time=  8.3s/  0.4s | lr=0.050 |Valid: loss=1.232 1425.838 0.512 1425.325, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  76   1, time=  8.1s/  0.5s | lr=0.050 |Valid: loss=1.335 1409.892 0.624 1409.268, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  77   1, time=  7.9s/  0.5s | lr=0.050 |Valid: loss=1.340 1415.871 0.521 1415.350, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch  78   1, time=  8.1s/  0.5s | lr=0.050 |Valid: loss=1.350 1427.328 0.585 1426.744, TAw acc= 64.0% |
+[Outer Loop] Train Base 
+| O-Epoch  79   1, time=  7.9s/  0.5s | lr=0.050 |Valid: loss=1.260 1433.537 0.753 1432.784, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  80   1, time=  8.3s/  0.6s | lr=0.050 |Valid: loss=1.328 1427.254 0.735 1426.519, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  81   1, time=  8.1s/  0.6s | lr=0.050 |Valid: loss=1.292 1432.102 0.757 1431.346, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  82   1, time=  8.4s/  0.4s | lr=0.050 |Valid: loss=1.332 1416.764 0.722 1416.041, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  83   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.306 1414.653 0.778 1413.875, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  84   1, time=  8.8s/  0.6s | lr=0.050 |Valid: loss=1.259 1411.072 0.917 1410.155, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  85   1, time=  8.1s/  0.4s | lr=0.050 |Valid: loss=1.310 1416.233 0.651 1415.582, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch  86   1, time=  8.0s/  0.5s | lr=0.050 |Valid: loss=1.237 1434.434 0.725 1433.709, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch  87   1, time=  8.2s/  0.4s | lr=0.050 |Valid: loss=1.346 1413.439 0.633 1412.806, TAw acc= 64.0% |
+[Outer Loop] Train Base 
+| O-Epoch  88   1, time=  8.7s/  0.5s | lr=0.050 |Valid: loss=1.231 1405.251 0.665 1404.586, TAw acc= 69.8% |
+[Outer Loop] Train Base 
+| O-Epoch  89   1, time=  9.0s/  0.5s | lr=0.050 |Valid: loss=1.417 1403.575 0.641 1402.933, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch  90   1, time=  8.7s/  0.4s | lr=0.050 |Valid: loss=1.362 1438.184 0.625 1437.559, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  91   1, time=  8.7s/  0.4s | lr=0.050 |Valid: loss=1.379 1421.700 0.842 1420.858, TAw acc= 64.4% |
+[Outer Loop] Train Base 
+| O-Epoch  92   1, time=  9.0s/  0.5s | lr=0.050 |Valid: loss=1.389 1420.964 0.871 1420.092, TAw acc= 64.6% |
+[Outer Loop] Train Base 
+| O-Epoch  93   1, time=  8.4s/  0.5s | lr=0.050 |Valid: loss=1.275 1403.126 0.503 1402.624, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch  94   1, time=  8.5s/  0.5s | lr=0.050 |Valid: loss=1.331 1395.060 0.552 1394.508, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  95   1, time=  8.4s/  0.5s | lr=0.050 |Valid: loss=1.328 1412.844 0.542 1412.302, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  96   1, time=  8.2s/  0.5s | lr=0.050 |Valid: loss=1.326 1435.625 0.663 1434.962, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  97   1, time=  8.4s/  0.5s | lr=0.050 |Valid: loss=1.340 1409.040 0.605 1408.435, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch  98   1, time=  8.1s/  0.6s | lr=0.050 |Valid: loss=1.370 1420.411 0.832 1419.579, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch  99   1, time=  8.3s/  0.6s | lr=0.050 |Valid: loss=1.492 1430.774 0.761 1430.013, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch 100   1, time=  8.1s/  0.5s | lr=0.050 |Valid: loss=1.506 1430.073 0.692 1429.381, TAw acc= 62.6% |
+| Selected 4000 train exemplars, time=  0.1s
+Post Train Process
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=2.016 | TAw acc= 47.5%, forg= 10.8%| TAg acc= 14.2%, forg= 44.1% <<<
+>>> Test on task  1 : loss=1.593 | TAw acc= 55.6%, forg= 14.4%| TAg acc= 18.1%, forg= 50.3% <<<
+>>> Test on task  2 : loss=2.085 | TAw acc= 46.8%, forg= 10.4%| TAg acc= 10.2%, forg= 44.2% <<<
+>>> Test on task  3 : loss=1.820 | TAw acc= 55.5%, forg=  9.4%| TAg acc= 21.0%, forg= 39.8% <<<
+>>> Test on task  4 : loss=1.718 | TAw acc= 56.2%, forg= 13.3%| TAg acc= 15.8%, forg= 48.3% <<<
+>>> Test on task  5 : loss=2.480 | TAw acc= 37.8%, forg= 17.2%| TAg acc= 11.3%, forg= 38.9% <<<
+>>> Test on task  6 : loss=1.722 | TAw acc= 57.5%, forg= 10.5%| TAg acc= 22.1%, forg= 40.5% <<<
+>>> Test on task  7 : loss=1.393 | TAw acc= 63.7%, forg=  0.0%| TAg acc= 57.5%, forg=  0.0% <<<
+Save at ../miniimagenet_der_result10t/miniimagenet_der
+************************************************************************************************************
+Task  8
+************************************************************************************************************
+[Outer Loop] Train Base 
+| O-Epoch   1   1, time=  9.4s/  0.5s | lr=0.050 |Valid: loss=0.951 1509.445 1.474 1507.972, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch   2   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.855 1568.712 1.137 1567.575, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch   3   1, time=  9.6s/  0.5s | lr=0.050 |Valid: loss=0.886 1615.764 1.198 1614.567, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch   4   1, time=  9.9s/  0.5s | lr=0.050 |Valid: loss=0.873 1643.630 0.941 1642.690, TAw acc= 69.6% |
+[Outer Loop] Train Base 
+| O-Epoch   5   1, time=  9.9s/  0.5s | lr=0.050 |Valid: loss=0.845 1645.838 1.182 1644.656, TAw acc= 73.4% |
+[Outer Loop] Train Base 
+| O-Epoch   6   1, time=  9.8s/  0.6s | lr=0.050 |Valid: loss=0.836 1643.984 1.036 1642.949, TAw acc= 74.2% |
+[Outer Loop] Train Base 
+| O-Epoch   7   1, time=  9.9s/  0.5s | lr=0.050 |Valid: loss=0.914 1635.244 1.164 1634.081, TAw acc= 70.6% |
+[Outer Loop] Train Base 
+| O-Epoch   8   1, time=  9.7s/  0.4s | lr=0.050 |Valid: loss=0.861 1660.050 1.024 1659.026, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch   9   1, time=  9.7s/  0.5s | lr=0.050 |Valid: loss=0.952 1657.391 1.042 1656.348, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  10   1, time= 10.0s/  0.5s | lr=0.050 |Valid: loss=0.894 1653.424 0.908 1652.517, TAw acc= 72.2% |
+[Outer Loop] Train Base 
+| O-Epoch  11   1, time=  9.9s/  0.4s | lr=0.050 |Valid: loss=0.862 1649.888 1.091 1648.797, TAw acc= 74.4% |
+[Outer Loop] Train Base 
+| O-Epoch  12   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.880 1618.280 0.916 1617.364, TAw acc= 72.6% |
+[Outer Loop] Train Base 
+| O-Epoch  13   1, time=  9.9s/  0.5s | lr=0.050 |Valid: loss=0.879 1660.848 0.964 1659.884, TAw acc= 74.0% |
+[Outer Loop] Train Base 
+| O-Epoch  14   1, time=  9.7s/  0.5s | lr=0.050 |Valid: loss=0.913 1640.702 0.979 1639.723, TAw acc= 71.0% |
+[Outer Loop] Train Base 
+| O-Epoch  15   1, time=  9.6s/  0.6s | lr=0.050 |Valid: loss=0.879 1644.569 0.851 1643.718, TAw acc= 72.8% |
+[Outer Loop] Train Base 
+| O-Epoch  16   1, time= 10.0s/  0.5s | lr=0.050 |Valid: loss=0.894 1640.216 1.119 1639.097, TAw acc= 73.0% |
+[Outer Loop] Train Base 
+| O-Epoch  17   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.953 1628.580 0.978 1627.602, TAw acc= 72.2% |
+[Outer Loop] Train Base 
+| O-Epoch  18   1, time=  6.7s/  0.4s | lr=0.050 |Valid: loss=1.014 1645.131 0.675 1644.456, TAw acc= 74.0% |
+[Outer Loop] Train Base 
+| O-Epoch  19   1, time=  9.1s/  0.5s | lr=0.050 |Valid: loss=0.908 1618.420 0.843 1617.577, TAw acc= 73.4% |
+[Outer Loop] Train Base 
+| O-Epoch  20   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.880 1619.649 0.768 1618.881, TAw acc= 72.4% |
+[Outer Loop] Train Base 
+| O-Epoch  21   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.868 1620.205 0.752 1619.453, TAw acc= 73.8% |
+[Outer Loop] Train Base 
+| O-Epoch  22   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.965 1613.227 0.927 1612.300, TAw acc= 72.4% |
+[Outer Loop] Train Base 
+| O-Epoch  23   1, time=  9.6s/  0.5s | lr=0.050 |Valid: loss=0.927 1626.145 0.673 1625.472, TAw acc= 72.8% |
+[Outer Loop] Train Base 
+| O-Epoch  24   1, time=  9.7s/  0.4s | lr=0.050 |Valid: loss=0.910 1633.179 0.909 1632.270, TAw acc= 73.8% |
+[Outer Loop] Train Base 
+| O-Epoch  25   1, time=  9.5s/  0.5s | lr=0.050 |Valid: loss=0.930 1639.806 1.061 1638.745, TAw acc= 74.2% |
+[Outer Loop] Train Base 
+| O-Epoch  26   1, time=  9.7s/  0.4s | lr=0.050 |Valid: loss=0.889 1621.474 0.950 1620.524, TAw acc= 74.2% |
+[Outer Loop] Train Base 
+| O-Epoch  27   1, time=  9.7s/  0.5s | lr=0.050 |Valid: loss=0.951 1638.916 0.666 1638.249, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  28   1, time=  9.4s/  0.4s | lr=0.050 |Valid: loss=0.926 1629.240 0.775 1628.465, TAw acc= 73.8% |
+[Outer Loop] Train Base 
+| O-Epoch  29   1, time= 10.0s/  0.5s | lr=0.050 |Valid: loss=0.892 1623.659 0.972 1622.688, TAw acc= 72.4% |
+[Outer Loop] Train Base 
+| O-Epoch  30   1, time=  9.7s/  0.6s | lr=0.050 |Valid: loss=0.946 1623.531 0.990 1622.541, TAw acc= 73.0% |
+[Outer Loop] Train Base 
+| O-Epoch  31   1, time=  9.7s/  0.6s | lr=0.050 |Valid: loss=0.921 1615.749 1.018 1614.730, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  32   1, time=  9.1s/  0.5s | lr=0.050 |Valid: loss=0.945 1640.790 0.504 1640.286, TAw acc= 73.4% |
+[Outer Loop] Train Base 
+| O-Epoch  33   1, time= 10.1s/  0.5s | lr=0.050 |Valid: loss=0.989 1610.596 0.993 1609.603, TAw acc= 74.2% |
+[Outer Loop] Train Base 
+| O-Epoch  34   1, time= 10.1s/  0.4s | lr=0.050 |Valid: loss=0.902 1618.879 0.780 1618.099, TAw acc= 72.6% |
+[Outer Loop] Train Base 
+| O-Epoch  35   1, time= 10.5s/  0.5s | lr=0.050 |Valid: loss=0.947 1637.595 0.830 1636.765, TAw acc= 72.6% |
+[Outer Loop] Train Base 
+| O-Epoch  36   1, time=  9.9s/  0.5s | lr=0.050 |Valid: loss=1.055 1633.895 0.983 1632.912, TAw acc= 72.0% |
+[Outer Loop] Train Base 
+| O-Epoch  37   1, time=  9.9s/  0.5s | lr=0.050 |Valid: loss=0.996 1624.277 0.779 1623.498, TAw acc= 71.2% |
+[Outer Loop] Train Base 
+| O-Epoch  38   1, time=  9.9s/  0.6s | lr=0.050 |Valid: loss=1.066 1641.194 0.616 1640.578, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  39   1, time=  9.6s/  0.5s | lr=0.050 |Valid: loss=0.917 1610.030 0.727 1609.303, TAw acc= 73.0% |
+[Outer Loop] Train Base 
+| O-Epoch  40   1, time=  9.9s/  0.5s | lr=0.050 |Valid: loss=0.934 1611.490 0.810 1610.681, TAw acc= 74.6% |
+[Outer Loop] Train Base 
+| O-Epoch  41   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.959 1628.640 0.583 1628.057, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  42   1, time=  9.9s/  0.4s | lr=0.050 |Valid: loss=0.981 1615.510 0.627 1614.883, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  43   1, time=  9.8s/  0.6s | lr=0.050 |Valid: loss=0.939 1606.690 0.490 1606.200, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  44   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.985 1586.017 1.000 1585.017, TAw acc= 73.8% |
+[Outer Loop] Train Base 
+| O-Epoch  45   1, time=  9.6s/  0.5s | lr=0.050 |Valid: loss=1.036 1612.962 0.868 1612.093, TAw acc= 71.0% |
+[Outer Loop] Train Base 
+| O-Epoch  46   1, time= 10.0s/  0.4s | lr=0.050 |Valid: loss=0.972 1615.793 0.645 1615.148, TAw acc= 72.8% |
+[Outer Loop] Train Base 
+| O-Epoch  47   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=1.075 1566.195 0.854 1565.341, TAw acc= 72.0% |
+[Outer Loop] Train Base 
+| O-Epoch  48   1, time= 10.9s/  0.4s | lr=0.050 |Valid: loss=1.056 1578.800 1.193 1577.607, TAw acc= 72.8% |
+[Outer Loop] Train Base 
+| O-Epoch  49   1, time= 10.0s/  0.5s | lr=0.050 |Valid: loss=0.934 1589.270 0.789 1588.481, TAw acc= 76.2% |
+[Outer Loop] Train Base 
+| O-Epoch  50   1, time= 10.0s/  0.5s | lr=0.050 |Valid: loss=0.925 1587.595 0.757 1586.838, TAw acc= 75.0% |
+[Outer Loop] Train Base 
+| O-Epoch  51   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.909 1586.729 0.956 1585.774, TAw acc= 73.6% |
+[Outer Loop] Train Base 
+| O-Epoch  52   1, time= 10.0s/  0.5s | lr=0.050 |Valid: loss=0.837 1584.898 0.790 1584.108, TAw acc= 75.8% |
+[Outer Loop] Train Base 
+| O-Epoch  53   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.868 1616.141 0.837 1615.304, TAw acc= 75.6% |
+[Outer Loop] Train Base 
+| O-Epoch  54   1, time=  9.7s/  0.5s | lr=0.050 |Valid: loss=0.876 1606.157 0.808 1605.349, TAw acc= 75.0% |
+[Outer Loop] Train Base 
+| O-Epoch  55   1, time=  9.6s/  0.4s | lr=0.050 |Valid: loss=0.940 1592.385 0.740 1591.645, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  56   1, time=  9.7s/  0.5s | lr=0.050 |Valid: loss=0.993 1596.102 0.850 1595.252, TAw acc= 73.4% |
+[Outer Loop] Train Base 
+| O-Epoch  57   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.975 1596.251 0.705 1595.547, TAw acc= 74.6% |
+[Outer Loop] Train Base 
+| O-Epoch  58   1, time=  9.6s/  0.5s | lr=0.050 |Valid: loss=1.005 1589.905 0.976 1588.929, TAw acc= 72.2% |
+[Outer Loop] Train Base 
+| O-Epoch  59   1, time=  9.9s/  0.5s | lr=0.050 |Valid: loss=1.027 1585.450 0.588 1584.861, TAw acc= 71.6% |
+[Outer Loop] Train Base 
+| O-Epoch  60   1, time=  9.9s/  0.6s | lr=0.050 |Valid: loss=0.957 1603.713 0.696 1603.017, TAw acc= 72.4% |
+[Outer Loop] Train Base 
+| O-Epoch  61   1, time=  9.2s/  0.5s | lr=0.050 |Valid: loss=0.921 1591.470 0.570 1590.900, TAw acc= 73.0% |
+[Outer Loop] Train Base 
+| O-Epoch  62   1, time=  9.9s/  0.5s | lr=0.050 |Valid: loss=1.071 1577.073 0.631 1576.442, TAw acc= 72.0% |
+[Outer Loop] Train Base 
+| O-Epoch  63   1, time=  9.9s/  0.6s | lr=0.050 |Valid: loss=0.975 1581.894 0.784 1581.110, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  64   1, time= 10.0s/  0.5s | lr=0.050 |Valid: loss=1.006 1566.902 0.909 1565.993, TAw acc= 74.0% |
+[Outer Loop] Train Base 
+| O-Epoch  65   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=1.033 1549.752 0.727 1549.026, TAw acc= 71.6% |
+[Outer Loop] Train Base 
+| O-Epoch  66   1, time=  9.7s/  0.5s | lr=0.050 |Valid: loss=1.036 1605.629 0.795 1604.834, TAw acc= 73.0% |
+[Outer Loop] Train Base 
+| O-Epoch  67   1, time=  9.6s/  0.6s | lr=0.050 |Valid: loss=0.991 1595.909 0.507 1595.402, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch  68   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=1.017 1568.700 0.823 1567.877, TAw acc= 73.4% |
+[Outer Loop] Train Base 
+| O-Epoch  69   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=1.018 1580.651 0.880 1579.771, TAw acc= 73.4% |
+[Outer Loop] Train Base 
+| O-Epoch  70   1, time= 10.0s/  0.4s | lr=0.050 |Valid: loss=1.049 1613.511 0.589 1612.922, TAw acc= 73.0% |
+[Outer Loop] Train Base 
+| O-Epoch  71   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.944 1583.996 0.837 1583.159, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  72   1, time=  9.6s/  0.5s | lr=0.050 |Valid: loss=1.110 1574.207 0.823 1573.384, TAw acc= 72.6% |
+[Outer Loop] Train Base 
+| O-Epoch  73   1, time= 10.5s/  0.5s | lr=0.050 |Valid: loss=0.997 1593.914 0.753 1593.160, TAw acc= 73.4% |
+[Outer Loop] Train Base 
+| O-Epoch  74   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=1.010 1564.044 0.642 1563.401, TAw acc= 72.4% |
+[Outer Loop] Train Base 
+| O-Epoch  75   1, time=  9.8s/  0.4s | lr=0.050 |Valid: loss=0.937 1578.579 0.931 1577.648, TAw acc= 73.8% |
+[Outer Loop] Train Base 
+| O-Epoch  76   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=1.104 1571.187 0.711 1570.477, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  77   1, time=  9.9s/  0.5s | lr=0.050 |Valid: loss=0.983 1593.897 0.638 1593.260, TAw acc= 76.4% |
+[Outer Loop] Train Base 
+| O-Epoch  78   1, time=  9.7s/  0.5s | lr=0.050 |Valid: loss=1.082 1586.561 0.644 1585.917, TAw acc= 72.0% |
+[Outer Loop] Train Base 
+| O-Epoch  79   1, time=  9.7s/  0.5s | lr=0.050 |Valid: loss=1.030 1578.588 0.896 1577.692, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  80   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.981 1580.418 0.860 1579.558, TAw acc= 74.8% |
+[Outer Loop] Train Base 
+| O-Epoch  81   1, time=  9.7s/  0.5s | lr=0.050 |Valid: loss=1.060 1579.172 0.728 1578.444, TAw acc= 72.2% |
+[Outer Loop] Train Base 
+| O-Epoch  82   1, time=  9.9s/  0.6s | lr=0.050 |Valid: loss=1.009 1597.008 0.660 1596.348, TAw acc= 73.8% |
+[Outer Loop] Train Base 
+| O-Epoch  83   1, time=  9.7s/  0.5s | lr=0.050 |Valid: loss=0.976 1552.136 0.711 1551.425, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  84   1, time= 10.0s/  0.5s | lr=0.050 |Valid: loss=1.025 1568.432 0.367 1568.065, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  85   1, time= 10.0s/  0.6s | lr=0.050 |Valid: loss=0.983 1576.167 0.620 1575.547, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  86   1, time=  9.8s/  0.6s | lr=0.050 |Valid: loss=1.031 1585.099 0.689 1584.409, TAw acc= 74.8% |
+[Outer Loop] Train Base 
+| O-Epoch  87   1, time=  9.9s/  0.4s | lr=0.050 |Valid: loss=0.995 1569.715 0.750 1568.965, TAw acc= 74.4% |
+[Outer Loop] Train Base 
+| O-Epoch  88   1, time= 10.8s/  0.5s | lr=0.050 |Valid: loss=1.021 1580.992 0.738 1580.254, TAw acc= 71.4% |
+[Outer Loop] Train Base 
+| O-Epoch  89   1, time= 10.1s/  0.5s | lr=0.050 |Valid: loss=1.010 1582.303 0.686 1581.617, TAw acc= 73.8% |
+[Outer Loop] Train Base 
+| O-Epoch  90   1, time= 10.6s/  0.5s | lr=0.050 |Valid: loss=1.081 1596.774 0.684 1596.090, TAw acc= 70.4% |
+[Outer Loop] Train Base 
+| O-Epoch  91   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=1.080 1585.052 0.781 1584.271, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  92   1, time=  9.9s/  0.8s | lr=0.050 |Valid: loss=1.006 1592.578 0.523 1592.055, TAw acc= 72.0% |
+[Outer Loop] Train Base 
+| O-Epoch  93   1, time= 10.2s/  0.5s | lr=0.050 |Valid: loss=0.988 1566.861 0.776 1566.085, TAw acc= 72.8% |
+[Outer Loop] Train Base 
+| O-Epoch  94   1, time= 10.0s/  0.5s | lr=0.050 |Valid: loss=0.972 1604.478 0.845 1603.633, TAw acc= 72.4% |
+[Outer Loop] Train Base 
+| O-Epoch  95   1, time= 10.0s/  0.5s | lr=0.050 |Valid: loss=1.012 1575.182 0.528 1574.653, TAw acc= 72.6% |
+[Outer Loop] Train Base 
+| O-Epoch  96   1, time=  9.5s/  0.5s | lr=0.050 |Valid: loss=1.169 1564.257 0.614 1563.643, TAw acc= 72.0% |
+[Outer Loop] Train Base 
+| O-Epoch  97   1, time= 10.0s/  0.5s | lr=0.050 |Valid: loss=1.026 1576.189 0.906 1575.283, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch  98   1, time=  9.8s/  0.5s | lr=0.050 |Valid: loss=0.985 1567.698 0.573 1567.125, TAw acc= 75.2% |
+[Outer Loop] Train Base 
+| O-Epoch  99   1, time=  9.9s/  0.5s | lr=0.050 |Valid: loss=0.950 1564.754 0.597 1564.158, TAw acc= 73.2% |
+[Outer Loop] Train Base 
+| O-Epoch 100   1, time=  9.7s/  0.4s | lr=0.050 |Valid: loss=1.061 1575.590 0.751 1574.839, TAw acc= 74.6% |
+| Selected 4500 train exemplars, time=  0.1s
+Post Train Process
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=1.993 | TAw acc= 47.5%, forg= 10.8%| TAg acc= 14.4%, forg= 43.9% <<<
+>>> Test on task  1 : loss=1.642 | TAw acc= 57.8%, forg= 12.2%| TAg acc= 18.9%, forg= 49.5% <<<
+>>> Test on task  2 : loss=1.981 | TAw acc= 46.6%, forg= 10.6%| TAg acc= 10.6%, forg= 43.8% <<<
+>>> Test on task  3 : loss=1.715 | TAw acc= 55.5%, forg=  9.4%| TAg acc= 14.3%, forg= 46.5% <<<
+>>> Test on task  4 : loss=1.578 | TAw acc= 56.8%, forg= 12.7%| TAg acc= 18.7%, forg= 45.4% <<<
+>>> Test on task  5 : loss=2.410 | TAw acc= 41.9%, forg= 13.1%| TAg acc=  8.3%, forg= 41.9% <<<
+>>> Test on task  6 : loss=1.853 | TAw acc= 55.0%, forg= 13.0%| TAg acc= 17.0%, forg= 45.6% <<<
+>>> Test on task  7 : loss=1.724 | TAw acc= 54.7%, forg=  9.0%| TAg acc= 17.4%, forg= 40.1% <<<
+>>> Test on task  8 : loss=1.121 | TAw acc= 71.9%, forg=  0.0%| TAg acc= 64.2%, forg=  0.0% <<<
+Save at ../miniimagenet_der_result10t/miniimagenet_der
+************************************************************************************************************
+Task  9
+************************************************************************************************************
+[Outer Loop] Train Base 
+| O-Epoch   1   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.107 1573.503 1.493 1572.010, TAw acc= 62.4% |
+[Outer Loop] Train Base 
+| O-Epoch   2   1, time= 11.8s/  0.5s | lr=0.050 |Valid: loss=1.109 1664.542 1.347 1663.195, TAw acc= 63.4% |
+[Outer Loop] Train Base 
+| O-Epoch   3   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.122 1717.922 1.475 1716.447, TAw acc= 63.2% |
+[Outer Loop] Train Base 
+| O-Epoch   4   1, time= 11.7s/  0.5s | lr=0.050 |Valid: loss=1.076 1762.799 1.256 1761.543, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch   5   1, time= 11.6s/  0.4s | lr=0.050 |Valid: loss=1.089 1796.632 1.537 1795.095, TAw acc= 64.0% |
+[Outer Loop] Train Base 
+| O-Epoch   6   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.001 1787.388 0.966 1786.422, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch   7   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.042 1802.738 1.129 1801.609, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch   8   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.072 1789.899 1.214 1788.686, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch   9   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=0.956 1778.848 0.957 1777.891, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  10   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.004 1807.266 0.813 1806.453, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  11   1, time= 11.7s/  0.5s | lr=0.050 |Valid: loss=1.105 1815.008 0.867 1814.141, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch  12   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=0.998 1759.891 1.007 1758.883, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  13   1, time= 10.8s/  0.5s | lr=0.050 |Valid: loss=1.111 1794.228 1.072 1793.155, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  14   1, time= 11.8s/  0.5s | lr=0.050 |Valid: loss=1.068 1779.386 1.173 1778.213, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  15   1, time= 11.5s/  0.4s | lr=0.050 |Valid: loss=1.118 1757.857 0.858 1756.999, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  16   1, time= 11.4s/  0.4s | lr=0.050 |Valid: loss=1.111 1788.197 0.677 1787.521, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  17   1, time=  7.4s/  0.5s | lr=0.050 |Valid: loss=1.056 1795.003 1.019 1793.984, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  18   1, time= 11.4s/  0.5s | lr=0.050 |Valid: loss=1.146 1789.493 1.168 1788.325, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  19   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.151 1728.476 0.827 1727.649, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  20   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.210 1777.017 1.102 1775.915, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  21   1, time= 11.9s/  0.5s | lr=0.050 |Valid: loss=1.031 1767.372 1.101 1766.271, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  22   1, time= 11.6s/  0.4s | lr=0.050 |Valid: loss=1.058 1781.328 1.091 1780.237, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  23   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.173 1770.419 0.971 1769.448, TAw acc= 63.4% |
+[Outer Loop] Train Base 
+| O-Epoch  24   1, time= 11.6s/  0.4s | lr=0.050 |Valid: loss=1.218 1758.916 1.092 1757.824, TAw acc= 63.6% |
+[Outer Loop] Train Base 
+| O-Epoch  25   1, time= 11.9s/  0.6s | lr=0.050 |Valid: loss=1.102 1746.626 1.406 1745.220, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  26   1, time= 12.1s/  0.4s | lr=0.050 |Valid: loss=1.096 1763.962 0.879 1763.083, TAw acc= 70.8% |
+[Outer Loop] Train Base 
+| O-Epoch  27   1, time= 12.2s/  0.5s | lr=0.050 |Valid: loss=1.141 1786.145 0.976 1785.169, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  28   1, time= 11.6s/  0.4s | lr=0.050 |Valid: loss=1.171 1807.366 1.019 1806.348, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch  29   1, time= 11.7s/  0.5s | lr=0.050 |Valid: loss=1.272 1773.507 1.063 1772.444, TAw acc= 64.4% |
+[Outer Loop] Train Base 
+| O-Epoch  30   1, time= 11.9s/  0.5s | lr=0.050 |Valid: loss=1.212 1787.162 1.075 1786.088, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  31   1, time= 11.4s/  0.4s | lr=0.050 |Valid: loss=1.251 1766.221 0.667 1765.554, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  32   1, time= 11.5s/  0.4s | lr=0.050 |Valid: loss=1.182 1768.440 0.764 1767.676, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  33   1, time= 11.8s/  0.4s | lr=0.050 |Valid: loss=1.278 1760.815 0.968 1759.847, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  34   1, time= 11.6s/  0.6s | lr=0.050 |Valid: loss=1.250 1781.984 0.765 1781.219, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  35   1, time= 11.4s/  0.5s | lr=0.050 |Valid: loss=1.265 1759.746 0.752 1758.995, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  36   1, time= 10.5s/  0.5s | lr=0.050 |Valid: loss=1.315 1753.167 0.761 1752.406, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch  37   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.251 1759.651 0.995 1758.656, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  38   1, time= 11.4s/  0.6s | lr=0.050 |Valid: loss=1.237 1761.543 0.873 1760.671, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch  39   1, time= 11.7s/  0.6s | lr=0.050 |Valid: loss=1.188 1748.852 0.859 1747.993, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  40   1, time= 12.6s/  0.4s | lr=0.050 |Valid: loss=1.201 1750.729 0.774 1749.956, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  41   1, time= 11.5s/  0.4s | lr=0.050 |Valid: loss=1.392 1768.723 1.089 1767.635, TAw acc= 62.4% |
+[Outer Loop] Train Base 
+| O-Epoch  42   1, time= 11.8s/  0.5s | lr=0.050 |Valid: loss=1.281 1741.049 0.936 1740.113, TAw acc= 65.2% |
+[Outer Loop] Train Base 
+| O-Epoch  43   1, time= 11.5s/  0.6s | lr=0.050 |Valid: loss=1.206 1760.246 0.938 1759.308, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  44   1, time= 11.9s/  0.5s | lr=0.050 |Valid: loss=1.336 1760.646 0.807 1759.839, TAw acc= 63.8% |
+[Outer Loop] Train Base 
+| O-Epoch  45   1, time= 11.7s/  0.5s | lr=0.050 |Valid: loss=1.309 1758.301 1.085 1757.216, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  46   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.304 1765.306 0.811 1764.495, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  47   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.257 1754.332 1.096 1753.235, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  48   1, time= 11.4s/  0.4s | lr=0.050 |Valid: loss=1.191 1750.807 0.844 1749.964, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  49   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.284 1756.489 1.044 1755.445, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch  50   1, time= 11.1s/  0.5s | lr=0.050 |Valid: loss=1.420 1770.975 0.883 1770.092, TAw acc= 62.6% |
+[Outer Loop] Train Base 
+| O-Epoch  51   1, time= 11.5s/  0.4s | lr=0.050 |Valid: loss=1.359 1735.933 0.730 1735.203, TAw acc= 64.6% |
+[Outer Loop] Train Base 
+| O-Epoch  52   1, time= 11.7s/  0.5s | lr=0.050 |Valid: loss=1.308 1734.890 0.996 1733.894, TAw acc= 64.2% |
+[Outer Loop] Train Base 
+| O-Epoch  53   1, time= 11.0s/  0.5s | lr=0.050 |Valid: loss=1.223 1737.219 0.858 1736.362, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  54   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.206 1752.946 0.601 1752.345, TAw acc= 67.2% |
+[Outer Loop] Train Base 
+| O-Epoch  55   1, time= 11.8s/  0.4s | lr=0.050 |Valid: loss=1.280 1734.767 0.859 1733.908, TAw acc= 63.6% |
+[Outer Loop] Train Base 
+| O-Epoch  56   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.398 1731.845 0.990 1730.855, TAw acc= 63.6% |
+[Outer Loop] Train Base 
+| O-Epoch  57   1, time= 11.4s/  0.4s | lr=0.050 |Valid: loss=1.301 1732.235 0.857 1731.378, TAw acc= 68.2% |
+[Outer Loop] Train Base 
+| O-Epoch  58   1, time= 12.0s/  0.5s | lr=0.050 |Valid: loss=1.248 1748.115 1.090 1747.026, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  59   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.221 1739.431 0.630 1738.801, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  60   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.237 1713.736 0.976 1712.761, TAw acc= 69.2% |
+[Outer Loop] Train Base 
+| O-Epoch  61   1, time= 11.8s/  0.5s | lr=0.050 |Valid: loss=1.210 1705.255 0.530 1704.725, TAw acc= 70.2% |
+[Outer Loop] Train Base 
+| O-Epoch  62   1, time= 11.9s/  0.5s | lr=0.050 |Valid: loss=1.296 1722.574 0.889 1721.684, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  63   1, time= 11.7s/  0.5s | lr=0.050 |Valid: loss=1.288 1723.522 0.864 1722.658, TAw acc= 68.6% |
+[Outer Loop] Train Base 
+| O-Epoch  64   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.260 1729.327 0.948 1728.379, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch  65   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.288 1730.942 0.686 1730.255, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  66   1, time= 11.1s/  0.6s | lr=0.050 |Valid: loss=1.299 1744.782 0.765 1744.017, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch  67   1, time= 11.7s/  0.5s | lr=0.050 |Valid: loss=1.257 1725.396 0.719 1724.677, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  68   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.132 1740.423 0.618 1739.804, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  69   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.187 1737.017 0.676 1736.341, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  70   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.134 1741.518 0.820 1740.698, TAw acc= 67.8% |
+[Outer Loop] Train Base 
+| O-Epoch  71   1, time= 11.7s/  0.5s | lr=0.050 |Valid: loss=1.272 1745.641 0.803 1744.838, TAw acc= 65.8% |
+[Outer Loop] Train Base 
+| O-Epoch  72   1, time= 11.6s/  0.4s | lr=0.050 |Valid: loss=1.286 1760.066 0.986 1759.080, TAw acc= 66.2% |
+[Outer Loop] Train Base 
+| O-Epoch  73   1, time= 11.1s/  0.4s | lr=0.050 |Valid: loss=1.223 1739.620 0.950 1738.670, TAw acc= 66.8% |
+[Outer Loop] Train Base 
+| O-Epoch  74   1, time= 11.8s/  0.5s | lr=0.050 |Valid: loss=1.247 1741.076 0.736 1740.340, TAw acc= 67.6% |
+[Outer Loop] Train Base 
+| O-Epoch  75   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.256 1711.039 0.683 1710.355, TAw acc= 67.4% |
+[Outer Loop] Train Base 
+| O-Epoch  76   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.304 1725.653 0.722 1724.931, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch  77   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.204 1732.303 0.872 1731.431, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  78   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.386 1725.555 1.128 1724.427, TAw acc= 64.2% |
+[Outer Loop] Train Base 
+| O-Epoch  79   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.228 1718.270 0.664 1717.606, TAw acc= 65.6% |
+[Outer Loop] Train Base 
+| O-Epoch  80   1, time= 11.7s/  0.4s | lr=0.050 |Valid: loss=1.240 1715.711 0.591 1715.120, TAw acc= 69.4% |
+[Outer Loop] Train Base 
+| O-Epoch  81   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.349 1723.860 0.541 1723.318, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  82   1, time= 11.7s/  0.5s | lr=0.050 |Valid: loss=1.345 1749.031 1.018 1748.013, TAw acc= 64.4% |
+[Outer Loop] Train Base 
+| O-Epoch  83   1, time= 11.5s/  0.4s | lr=0.050 |Valid: loss=1.368 1744.271 0.665 1743.607, TAw acc= 65.0% |
+[Outer Loop] Train Base 
+| O-Epoch  84   1, time= 11.6s/  0.6s | lr=0.050 |Valid: loss=1.187 1728.749 0.696 1728.053, TAw acc= 70.0% |
+[Outer Loop] Train Base 
+| O-Epoch  85   1, time= 11.9s/  0.5s | lr=0.050 |Valid: loss=1.295 1730.325 0.829 1729.496, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  86   1, time= 11.9s/  0.4s | lr=0.050 |Valid: loss=1.317 1723.195 0.769 1722.427, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  87   1, time= 12.1s/  0.5s | lr=0.050 |Valid: loss=1.219 1721.020 0.959 1720.061, TAw acc= 69.0% |
+[Outer Loop] Train Base 
+| O-Epoch  88   1, time= 12.4s/  0.6s | lr=0.050 |Valid: loss=1.410 1711.122 0.699 1710.423, TAw acc= 64.4% |
+[Outer Loop] Train Base 
+| O-Epoch  89   1, time= 12.3s/  0.5s | lr=0.050 |Valid: loss=1.285 1723.314 0.588 1722.726, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  90   1, time= 12.0s/  0.5s | lr=0.050 |Valid: loss=1.369 1742.819 0.539 1742.280, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch  91   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.289 1737.138 1.011 1736.127, TAw acc= 66.6% |
+[Outer Loop] Train Base 
+| O-Epoch  92   1, time= 11.6s/  0.5s | lr=0.050 |Valid: loss=1.294 1740.578 0.909 1739.669, TAw acc= 68.4% |
+[Outer Loop] Train Base 
+| O-Epoch  93   1, time= 11.8s/  0.5s | lr=0.050 |Valid: loss=1.377 1736.292 0.540 1735.753, TAw acc= 66.4% |
+[Outer Loop] Train Base 
+| O-Epoch  94   1, time= 11.6s/  0.6s | lr=0.050 |Valid: loss=1.249 1739.326 0.704 1738.622, TAw acc= 67.0% |
+[Outer Loop] Train Base 
+| O-Epoch  95   1, time= 11.4s/  0.5s | lr=0.050 |Valid: loss=1.287 1720.050 0.466 1719.584, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  96   1, time= 11.5s/  0.4s | lr=0.050 |Valid: loss=1.341 1735.270 0.817 1734.453, TAw acc= 65.0% |
+[Outer Loop] Train Base 
+| O-Epoch  97   1, time= 11.4s/  0.5s | lr=0.050 |Valid: loss=1.350 1727.353 0.768 1726.585, TAw acc= 66.0% |
+[Outer Loop] Train Base 
+| O-Epoch  98   1, time= 11.8s/  0.5s | lr=0.050 |Valid: loss=1.276 1732.213 0.767 1731.446, TAw acc= 68.0% |
+[Outer Loop] Train Base 
+| O-Epoch  99   1, time= 11.5s/  0.5s | lr=0.050 |Valid: loss=1.260 1716.067 0.757 1715.311, TAw acc= 65.4% |
+[Outer Loop] Train Base 
+| O-Epoch 100   1, time= 11.4s/  0.4s | lr=0.050 |Valid: loss=1.225 1716.476 0.947 1715.529, TAw acc= 68.0% |
+| Selected 5000 train exemplars, time=  0.1s
+Post Train Process
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=1.982 | TAw acc= 47.3%, forg= 11.0%| TAg acc= 13.2%, forg= 45.1% <<<
+>>> Test on task  1 : loss=1.609 | TAw acc= 57.0%, forg= 13.0%| TAg acc= 18.2%, forg= 50.2% <<<
+>>> Test on task  2 : loss=2.070 | TAw acc= 44.4%, forg= 12.8%| TAg acc=  8.9%, forg= 45.5% <<<
+>>> Test on task  3 : loss=1.786 | TAw acc= 56.3%, forg=  8.6%| TAg acc= 17.6%, forg= 43.2% <<<
+>>> Test on task  4 : loss=1.667 | TAw acc= 55.0%, forg= 14.5%| TAg acc= 18.1%, forg= 46.0% <<<
+>>> Test on task  5 : loss=2.416 | TAw acc= 39.9%, forg= 15.1%| TAg acc=  8.9%, forg= 41.3% <<<
+>>> Test on task  6 : loss=1.742 | TAw acc= 56.4%, forg= 11.6%| TAg acc= 17.2%, forg= 45.4% <<<
+>>> Test on task  7 : loss=1.794 | TAw acc= 53.7%, forg= 10.0%| TAg acc= 17.6%, forg= 39.9% <<<
+>>> Test on task  8 : loss=1.364 | TAw acc= 65.2%, forg=  6.7%| TAg acc= 29.5%, forg= 34.7% <<<
+>>> Test on task  9 : loss=1.277 | TAw acc= 66.5%, forg=  0.0%| TAg acc= 56.9%, forg=  0.0% <<<
+Save at ../miniimagenet_der_result10t/miniimagenet_der
+************************************************************************************************************
+TAw Acc
+	 58.3%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 58.3% 
+	 54.1%  70.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 62.1% 
+	 51.3%  58.5%  57.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 55.7% 
+	 49.8%  56.9%  45.0%  64.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 54.1% 
+	 51.6%  55.2%  47.4%  58.1%  69.5%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 56.4% 
+	 47.8%  52.4%  45.0%  56.5%  59.1%  55.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 52.6% 
+	 48.6%  57.2%  43.4%  55.6%  58.2%  43.7%  68.0%   0.0%   0.0%   0.0% 	Avg.: 53.5% 
+	 47.5%  55.6%  46.8%  55.5%  56.2%  37.8%  57.5%  63.7%   0.0%   0.0% 	Avg.: 52.6% 
+	 47.5%  57.8%  46.6%  55.5%  56.8%  41.9%  55.0%  54.7%  71.9%   0.0% 	Avg.: 54.2% 
+	 47.3%  57.0%  44.4%  56.3%  55.0%  39.9%  56.4%  53.7%  65.2%  66.5% 	Avg.: 54.2% 
+************************************************************************************************************
+TAg Acc
+	 58.3%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 58.3% 
+	 21.6%  68.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 45.0% 
+	 18.6%  22.7%  54.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 31.9% 
+	 18.1%  22.7%  13.6%  60.8%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 28.8% 
+	 17.2%  20.6%  12.7%  25.8%  64.1%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 28.1% 
+	 16.4%  17.7%  10.8%  16.1%  21.9%  50.2%   0.0%   0.0%   0.0%   0.0% 	Avg.: 22.2% 
+	 13.8%  21.2%  11.8%  17.3%  22.3%  13.9%  62.6%   0.0%   0.0%   0.0% 	Avg.: 23.3% 
+	 14.2%  18.1%  10.2%  21.0%  15.8%  11.3%  22.1%  57.5%   0.0%   0.0% 	Avg.: 21.3% 
+	 14.4%  18.9%  10.6%  14.3%  18.7%   8.3%  17.0%  17.4%  64.2%   0.0% 	Avg.: 20.4% 
+	 13.2%  18.2%   8.9%  17.6%  18.1%   8.9%  17.2%  17.6%  29.5%  56.9% 	Avg.: 20.6% 
+************************************************************************************************************
+TAw Forg
+	  0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	  4.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.:  4.2% 
+	  7.0%  11.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.:  9.2% 
+	  8.5%  13.1%  12.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 11.3% 
+	  6.7%  14.8%   9.8%   6.8%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.:  9.5% 
+	 10.5%  17.6%  12.2%   8.4%  10.4%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 11.8% 
+	  9.7%  12.8%  13.8%   9.3%  11.3%  11.3%   0.0%   0.0%   0.0%   0.0% 	Avg.: 11.4% 
+	 10.8%  14.4%  10.4%   9.4%  13.3%  17.2%  10.5%   0.0%   0.0%   0.0% 	Avg.: 12.3% 
+	 10.8%  12.2%  10.6%   9.4%  12.7%  13.1%  13.0%   9.0%   0.0%   0.0% 	Avg.: 11.3% 
+	 11.0%  13.0%  12.8%   8.6%  14.5%  15.1%  11.6%  10.0%   6.7%   0.0% 	Avg.: 11.5% 
+************************************************************************************************************
+TAg Forg
+	  0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 
+	 36.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 36.7% 
+	 39.7%  45.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 42.7% 
+	 40.2%  45.7%  40.8%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 42.2% 
+	 41.1%  47.8%  41.7%  35.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 41.4% 
+	 41.9%  50.7%  43.6%  44.7%  42.2%   0.0%   0.0%   0.0%   0.0%   0.0% 	Avg.: 44.6% 
+	 44.5%  47.2%  42.6%  43.5%  41.8%  36.3%   0.0%   0.0%   0.0%   0.0% 	Avg.: 42.7% 
+	 44.1%  50.3%  44.2%  39.8%  48.3%  38.9%  40.5%   0.0%   0.0%   0.0% 	Avg.: 43.7% 
+	 43.9%  49.5%  43.8%  46.5%  45.4%  41.9%  45.6%  40.1%   0.0%   0.0% 	Avg.: 44.6% 
+	 45.1%  50.2%  45.5%  43.2%  46.0%  41.3%  45.4%  39.9%  34.7%   0.0% 	Avg.: 43.5% 
+************************************************************************************************************
+[Elapsed time = 1.7 h]
+Done!

@@ -1,0 +1,173 @@
+CIFAR-100
+----------------
+MEM 5000
+----------------
+nohup python src/main_incremental.py --results-path ../cifar100_agla_result10t --num-tasks 10 --nc-first-task 10 --approach agla --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 2 --seed 0 >> cifar100_agla_resnet18_10_10_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_der_result10t --num-tasks 10 --nc-first-task 10 --approach der --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 2 --seed 0 >> cifar100_der_resnet18_10_10_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_icarl_result10t --num-tasks 10 --nc-first-task 10 --approach icarl --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 1 --seed 0 >> cifar100_icarl_resnet18_10_10_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar100_bic_result10t --num-tasks 10 --nc-first-task 10 --approach bic --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 1 --seed 0  >> cifar100_bic_resnet18_10_10_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar100_eeil_result10t --num-tasks 10 --nc-first-task 10 --approach eeil --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 2 --seed 0 >> cifar100_eeil_resnet18_10_10_run1.txt & disown -h 
+
+MEM 4000
+----------------
+nohup python src/main_incremental.py --results-path ../cifar100_agla_result10t --num-tasks 10 --nc-first-task 10 --approach agla --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 40 --gpu 2 --seed 0 >> cifar100_agla_resnet18_10_10_M4000_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_der_result10t --num-tasks 10 --nc-first-task 10 --approach der --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 40 --gpu 2 --seed 0 >> cifar100_der_resnet18_10_10_M4000_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_icarl_result10t --num-tasks 10 --nc-first-task 10 --approach icarl --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 40 --gpu 2 --seed 0 >> cifar100_icarl_resnet18_10_10_M4000_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_bic_result10t --num-tasks 10 --nc-first-task 10 --approach bic --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 40 --gpu 2 --seed 0 >> cifar100_bic_resnet18_10_10_M4000_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_eeil_result10t --num-tasks 10 --nc-first-task 10 --approach eeil --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 40 --gpu 2 --seed 0 >> cifar100_eeil_resnet18_10_10_M4000_run1.txt & disown -h
+
+MEM 3000
+----------------
+nohup python src/main_incremental.py --results-path ../cifar100_agla_result10t --num-tasks 10 --nc-first-task 10 --approach agla --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 30 --gpu 2 --seed 0 >> cifar100_agla_resnet18_10_10_M3000_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_der_result10t --num-tasks 10 --nc-first-task 10 --approach der --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 30 --gpu 2 --seed 0 >> cifar100_der_resnet18_10_10_M3000_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_icarl_result10t --num-tasks 10 --nc-first-task 10 --approach icarl --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 30 --gpu 1 --seed 0 >> cifar100_icarl_resnet18_10_10_M3000_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar100_bic_result10t --num-tasks 10 --nc-first-task 10 --approach bic --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 30 --gpu 1 --seed 0  >> cifar100_bic_resnet18_10_10_M3000_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar100_eeil_result10t --num-tasks 10 --nc-first-task 10 --approach eeil --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 30 --gpu 2 --seed 0 >> cifar100_eeil_resnet18_10_10_M3000_run1.txt & disown -h 
+
+
+MEM 2000
+----------------
+nohup python src/main_incremental.py --results-path ../cifar100_agla_result10t --num-tasks 10 --nc-first-task 10 --approach agla --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 20 --gpu 2 --seed 0 >> cifar100_agla_resnet18_10_10_M2000_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_der_result10t --num-tasks 10 --nc-first-task 10 --approach der --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 20 --gpu 2 --seed 0 >> cifar100_der_resnet18_10_10_M2000_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_icarl_result10t --num-tasks 10 --nc-first-task 10 --approach icarl --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 20 --gpu 1 --seed 0 >> cifar100_icarl_resnet18_10_10_M2000_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar100_bic_result10t --num-tasks 10 --nc-first-task 10 --approach bic --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 20 --gpu 1 --seed 0  >> cifar100_bic_resnet18_10_10_M2000_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar100_eeil_result10t --num-tasks 10 --nc-first-task 10 --approach eeil --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 20 --gpu 2 --seed 0 >> cifar100_eeil_resnet18_10_10_M2000_run1.txt & disown -h 
+
+
+NO-MEM
+----------------
+nohup python src/main_incremental.py --results-path ../cifar100_ewc_result10t --num-tasks 10 --nc-first-task 10 --approach ewc --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 2 --seed 0 >> cifar100_ewc_resnet18_10_10_run1.txt & disown -h  
+
+nohup python src/main_incremental.py --results-path ../cifar100_path_integral_result10t --num-tasks 10 --nc-first-task 10 --approach path_integral --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> cifar100_path_integral_resnet18_10_10_run1.txt & disown -h  
+
+nohup python src/main_incremental.py --results-path ../cifar100_lwf_result10t --num-tasks 10 --nc-first-task 10 --approach lwf --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> cifar100_lwf_resnet18_10_10_run1.txt & disown -h  
+
+nohup python src/main_incremental.py --results-path ../cifar100_mas_result10t --num-tasks 10 --nc-first-task 10 --approach mas --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 2 --seed 0 >> cifar100_mas_resnet18_10_10_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar100_finetuning_result10t --num-tasks 10 --nc-first-task 10 --approach finetuning --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 2 --seed 0 >> cifar100_finetuning_resnet18_10_10_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar100_joint_result10t --num-tasks 10 --nc-first-task 10 --approach joint --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 2 --seed 0 >> cifar100_joint_resnet18_10_10_run1.txt & disown -h 
+
+
+MINIIMAGENET
+----------------
+MEM 5000
+----------------
+nohup python src/main_incremental.py --results-path ../miniimagenet_agla_result10t --datasets miniimagenet --num-tasks 10 --nc-first-task 10 --approach agla --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 2 --seed 0 >> miniimagenet_agla_resnet18_10_10_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../miniimagenet_der_result10t --datasets miniimagenet --num-tasks 10 --nc-first-task 10 --approach der --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 2 --seed 0 >> miniimagenet_der_resnet18_10_10_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../miniimagenet_icarl_result10t --datasets miniimagenet --num-tasks 10 --nc-first-task 10 --approach icarl --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 1 --seed 0 >> miniimagenet_icarl_resnet18_10_10_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../miniimagenet_bic_result10t --datasets miniimagenet --num-tasks 10 --nc-first-task 10 --approach bic --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 1 --seed 0  >> miniimagenet_bic_resnet18_10_10_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../miniimagenet_eeil_result10t --datasets miniimagenet --num-tasks 10 --nc-first-task 10 --approach eeil --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 2 --seed 0 >> miniimagenet_eeil_resnet18_10_10_run1.txt & disown -h 
+
+
+NO-MEM
+----------------
+nohup python src/main_incremental.py --results-path ../miniimagenet_ewc_result10t --datasets miniimagenet --num-tasks 10 --nc-first-task 10 --approach ewc --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 2 --seed 0 >> miniimagenet_ewc_resnet18_10_10_run1.txt & disown -h  
+
+nohup python src/main_incremental.py --results-path ../miniimagenet_path_integral_result10t --datasets miniimagenet --num-tasks 10 --nc-first-task 10 --approach path_integral --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> miniimagenet_path_integral_resnet18_10_10_run1.txt & disown -h  
+
+nohup python src/main_incremental.py --results-path ../miniimagenet_lwf_result10t --datasets miniimagenet --num-tasks 10 --nc-first-task 10 --approach lwf --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> miniimagenet_lwf_resnet18_10_10_run1.txt & disown -h  
+
+nohup python src/main_incremental.py --results-path ../miniimagenet_mas_result10t --datasets miniimagenet --num-tasks 10 --nc-first-task 10 --approach mas --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 2 --seed 0 >> miniimagenet_mas_resnet18_10_10_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../miniimagenet_finetuning_result10t --datasets miniimagenet --num-tasks 10 --nc-first-task 10 --approach finetuning --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 2 --seed 0 >> miniimagenet_finetuning_resnet18_10_10_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../miniimagenet_joint_result10t --datasets miniimagenet --num-tasks 10 --nc-first-task 10 --approach joint --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 2 --seed 0 >> miniimagenet_joint_resnet18_10_10_run1.txt & disown -h 
+
+
+
+CIFAR-10
+----------------
+MEM 5000
+----------------
+nohup python src/main_incremental.py --results-path ../cifar10_agla_result5t --datasets cifar10 --num-tasks 5 --nc-first-task 2 --approach agla --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 500 --gpu 2 --seed 0 >> cifar10_agla_resnet18_5t_2c_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar10_der_result5t --datasets cifar10 --num-tasks 5 --nc-first-task 2 --approach der --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 500 --gpu 2 --seed 0 >> cifar10_der_resnet18_5t_2c_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar10_bic_result5t --datasets cifar10 --num-tasks 5 --nc-first-task 2 --approach bic --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 500 --gpu 2 --seed 0 >> cifar10_bic_resnet18_5t_2c_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar10_icarl_result5t --datasets cifar10 --num-tasks 5 --nc-first-task 2 --approach icarl --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 500 --gpu 2 --seed 0 >> cifar10_icarl_resnet18_5t_2c_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar10_eeil_result5t --datasets cifar10 --num-tasks 5 --nc-first-task 2 --approach eeil --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 500 --gpu 2 --seed 0 >> cifar10_eeil_resnet18_5t_2c_run1.txt & disown -h
+
+
+NO-MEM
+----------------
+nohup python src/main_incremental.py --results-path ../cifar10_ewc_result5t --datasets cifar10 --num-tasks 5 --nc-first-task 2 --approach ewc --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> cifar10_ewc_resnet18_5t_2c_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar10_path_integral_result5t --datasets cifar10 --num-tasks 5 --nc-first-task 2 --approach path_integral --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> cifar10_path_integral_resnet18_5t_2c_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar10_lwf_result5t --datasets cifar10 --num-tasks 5 --nc-first-task 2 --approach lwf --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> cifar10_lwf_resnet18_5t_2c_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar10_mas_result5t --datasets cifar10 --num-tasks 5 --nc-first-task 2 --approach mas --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> cifar10_mas_resnet18_5t_2c_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar10_finetuning_result5t --datasets cifar10 --num-tasks 5 --nc-first-task 2 --approach finetuning --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> cifar10_finetuning_resnet18_5t_2c_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../cifar10_joint_result5t --datasets cifar10 --num-tasks 5 --nc-first-task 2 --approach joint --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> cifar10_joint_resnet18_5t_2c_run1.txt & disown -h 
+
+
+
+MEM 5000
+----------------
+nohup python src/main_incremental.py --results-path ../mnist_agla_result5t --datasets mnist --num-tasks 5 --nc-first-task 2 --approach agla --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 500 --gpu 1 --seed 0 >> mnist_agla_resnet18_5t_2c_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../mnist_der_result5t --datasets mnist --num-tasks 5 --nc-first-task 2 --approach der --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 500 --gpu 1 --seed 0 >> mnist_der_resnet18_5t_2c_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../mnist_icarl_result5t --datasets mnist --num-tasks 5 --nc-first-task 2 --approach icarl --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 500 --gpu 1 --seed 0 >> mnist_icarl_resnet18_5t_2c_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../mnist_bic_result5t --datasets mnist --num-tasks 5 --nc-first-task 2 --approach bic --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 500 --gpu 1 --seed 0 >> mnist_bic_resnet18_5t_2c_run1.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../mnist_eeil_result5t --datasets mnist --num-tasks 5 --nc-first-task 2 --approach eeil --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 500 --gpu 1 --seed 0 >> mnist_eeil_resnet18_5t_2c_run1.txt & disown -h
+
+
+NO-MEM
+----------------
+nohup python src/main_incremental.py --results-path ../mnist_ewc_result5t --datasets mnist --num-tasks 5 --nc-first-task 2 --approach ewc --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> mnist_ewc_resnet18_5t_2c_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../mnist_path_integral_result5t --datasets mnist --num-tasks 5 --nc-first-task 2 --approach path_integral --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 0 --seed 0 >> mnist_path_integral_resnet18_5t_2c_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../mnist_lwf_result5t --datasets mnist --num-tasks 5 --nc-first-task 2 --approach lwf --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> mnist_lwf_resnet18_5t_2c_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../mnist_mas_result5t --datasets mnist --num-tasks 5 --nc-first-task 2 --approach mas --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> mnist_mas_resnet18_5t_2c_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../mnist_finetuning_result5t --datasets mnist --num-tasks 5 --nc-first-task 2 --approach finetuning --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> mnist_finetuning_resnet18_5t_2c_run1.txt & disown -h 
+
+nohup python src/main_incremental.py --results-path ../mnist_joint_result5t --datasets mnist --num-tasks 5 --nc-first-task 2 --approach joint --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --gpu 1 --seed 0 >> mnist_joint_resnet18_5t_2c_run1.txt & disown -h 
+
+
+Ablation Study
+----------------
+CIFAR-100
+----------------
+nohup python src/main_incremental.py --results-path ../cifar100_agla_noassessor_result10t --num-tasks 10 --nc-first-task 10 --approach agla_noassessor --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 2 --seed 0 >> cifar100_agla_noassessor_resnet18_10_10.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_agla_noderloss_result10t --num-tasks 10 --nc-first-task 10 --approach agla_derloss --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 2 --seed 0 >> cifar100_agla_derloss_resnet18_10_10.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_agla_noaugment_result10t --num-tasks 10 --nc-first-task 10 --approach agla_noaugment --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 2 --seed 0 >> cifar100_agla_noaugment_resnet18_10_10.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_agla_nodistillation_result10t --num-tasks 10 --nc-first-task 10 --approach agla_nodistillation --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 2 --seed 0 >> cifar100_agla_nodistillation_resnet18_10_10.txt & disown -h
+
+nohup python src/main_incremental.py --results-path ../cifar100_agla_notransform_result10t --num-tasks 10 --nc-first-task 10 --approach agla_notransform --momentum 0.9 --weight-decay 0.0002 --batch-size 100 --lr 0.05 --lr-factor 1 --nepochs 100 --network resnet18 --num-exemplars-per-class 50 --gpu 2 --seed 0 >> cifar100_agla_notransform_resnet18_10_10.txt & disown -h
+
+
+

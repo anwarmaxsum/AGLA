@@ -134,8 +134,8 @@ class Appr(Inc_Learning_Appr):
 
         #Train inner outer
         for e in range(self.nepochs):
-            if t > 0:
-                self.compute_memory_aug_weight(t)
+            # if t > 0:
+            #     self.compute_memory_aug_weight(t)
             for oe in range(self.outer_epochs):
 
                 print("[Inner Loop] Train Assessor")
@@ -153,9 +153,9 @@ class Appr(Inc_Learning_Appr):
                             trans_mem_outputs_old = self.model_old(self.trans_mem_x.to(self.device))
                             curr_trans_mem_outputs = self.model(self.trans_mem_x.to(self.device)) 
                             loss1 = self.cecriterion(t, outputs, targets.to(self.device).type(torch.long)) + self.cecriterion(t, curr_trans_mem_outputs, self.trans_mem_y)
-                            # loss2 = self.dercriterion(t, self.prev_trans_mem_outputs, curr_trans_mem_outputs, self.trans_mem_y) 
-                            loss2 = self.distcriterion(t, curr_trans_mem_outputs, self.trans_mem_y.to(self.device), trans_mem_outputs_old)
-                            loss = loss1+loss2
+                            loss2 = self.dercriterion(t, self.prev_trans_mem_outputs, curr_trans_mem_outputs, self.trans_mem_y) 
+                            dloss = self.distcriterion(t, curr_trans_mem_outputs, self.trans_mem_y.to(self.device), trans_mem_outputs_old)
+                            loss = loss1+loss2+dloss
                         else:
                             loss = self.cecriterion(t, outputs, targets.to(self.device).type(torch.long))
 
@@ -179,10 +179,10 @@ class Appr(Inc_Learning_Appr):
                     if(t>0):
                         mem_outputs_old = self.model_old(tr_mem_x)
                         curr_mem_outputs = self.model(tr_mem_x)
-                        loss1 = self.cecriterion(t, outputs, targets.to(self.device)) + (self.mem_w * self.cecriterion(t, curr_mem_outputs, tr_mem_y))
-                        # loss2 = self.dercriterion(t, self.prev_mem_outputs, curr_mem_outputs, tr_mem_y) 
-                        loss2 = self.distcriterion(t, curr_mem_outputs, tr_mem_y, mem_outputs_old)
-                        loss = (c_lr[0] * loss1)+(c_lr[1] * loss2 * t * self.mem_w)
+                        loss1 = self.cecriterion(t, outputs, targets.to(self.device)) + self.cecriterion(t, curr_mem_outputs, tr_mem_y)
+                        loss2 = self.dercriterion(t, self.prev_mem_outputs, curr_mem_outputs, tr_mem_y) 
+                        dloss = self.distcriterion(t, curr_mem_outputs, tr_mem_y, mem_outputs_old)
+                        loss = (c_lr[0] * loss1)+(c_lr[1] * loss2 * t) + (c_lr[2] * dloss * t)
                     else:
                         loss = c_lr[0] * self.cecriterion(t, outputs, targets.to(self.device))
 
@@ -194,10 +194,10 @@ class Appr(Inc_Learning_Appr):
                 clock1 = time.time()
                 val_loss, val_acc, _ = self.eval(t, val_loader)
                 clock2 = time.time()
-                print('| O-Epoch {:3d} {:3d}, time={:5.1f}s/{:5.1f}s | lrt={:.3f} {:.3f} |Valid: loss={:.3f} {:.3f} {:.3f} {:.3f}, TAw acc={:5.1f}% |'.format(
-                e+1, oe+1, clock1 - clock0, clock2 - clock1, c_lr[0], c_lr[1], val_loss, loss, loss1, loss2, 100 * val_acc), end='\n')
+                print('| O-Epoch {:3d} {:3d}, time={:5.1f}s/{:5.1f}s | c_lr={:.3f} {:.3f} {:.3f}|Valid: loss={:.3f} {:.3f} {:.3f} {:.3f} {:.3f}, TAw acc={:5.1f}% |'.format(
+                e+1, oe+1, clock1 - clock0, clock2 - clock1, c_lr[0], c_lr[1],c_lr[2], val_loss, loss, loss1, loss2, dloss, 100 * val_acc), end='\n')
                 self.logger.log_scalar(task=t, iter=e + 1, name="loss", value=val_loss, group="train")
-                self.logger.log_scalar(task=t, iter=e + 1, name="acc", value=100 * val_acc, group="train")
+                self.logger.log_scalar(task=t, iter=e + 1, name="acc", value=100 * val_acc, group="train")  
 
                 
                 if val_acc > best_acc:                
